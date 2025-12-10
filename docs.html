@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkAI Route — docs placeholder</title>
+    <link rel="icon" href="assets/favicon/favicon-32x32.png" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body class="page">
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="logo">LinkAI</a>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="route.html">Product</a>
+            <a href="solutions.html">Solutions</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="docs.html" class="active">Docs</a>
+            <a href="company.html">Company</a>
+            <a href="careers.html">Careers</a>
+          </div>
+          <div class="nav-actions">
+            <button class="theme-toggle" type="button" aria-label="Toggle theme"><span aria-hidden="true"></span></button>
+            <div class="nav-cta">
+              <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+              <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
+            </div>
+          </div>
+          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        </nav>
+        <div class="nav-mobile">
+          <a href="index.html">Home</a>
+          <a href="route.html">Product</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="docs.html" class="active">Docs</a>
+          <a href="company.html">Company</a>
+          <a href="careers.html">Careers</a>
+          <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+          <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="section-title">
+            <div class="beta-pill">Docs preview</div>
+            <div class="eyebrow">Documentation</div>
+            <h1>API docs are on the way.</h1>
+            <p>We’re finishing the developer portal. Meanwhile, here’s a preview of the API surface and how to get started.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="card">
+            <h3>Sample request</h3>
+            <pre class="code-block"><code>curl https://api.LinkAI.ie/v1/chat \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "provider": "openai",
+    "model": "gpt-5.1",
+    "input": "Hello from LinkAI Route"
+  }'</code></pre>
+            <p class="section-note">Replace provider/model with any configured option. Logs, spend and retries are handled by LinkAI Route.</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="grid-two">
+            <div class="card">
+              <h3>Coming soon</h3>
+              <ul class="list">
+                <li>Full reference covering chat, completions, embeddings, OCR jobs</li>
+                <li>Workflow DSL docs with templates</li>
+                <li>Guides for Node.js, Python and Go</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Need early access?</h3>
+              <p>
+                Email
+                <a class="email-link" data-email-user="info" data-email-domain="LinkAI.ie">info[at]LinkAI.ie</a>
+                and we’ll share the pre-release documentation PDF.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <strong>LinkAI Ltd</strong>
+            <p>LinkAI Route keeps AI usage predictable with one API, one workflow builder and transparent prepaid billing.</p>
+          </div>
+          <div>
+            <h4>Product</h4>
+            <div class="footer-links">
+              <a href="route.html">LinkAI Route</a>
+              <a href="solutions.html">Solutions</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="docs.html">Docs</a>
+            </div>
+          </div>
+            <div>
+              <h4>Company</h4>
+              <div class="footer-links">
+                <a href="company.html#about">About</a>
+                <a href="company.html#contact">Contact</a>
+                <a href="careers.html">Careers</a>
+              </div>
+            </div>
+          </div>
+        <div class="legal-links">
+          <a href="legal/terms.html">Terms of Service</a>
+          <a href="legal/privacy.html">Privacy Policy</a>
+          <a href="legal/refund.html">Refund Policy</a>
+        </div>
+        <p class="copyright">© LinkAI Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

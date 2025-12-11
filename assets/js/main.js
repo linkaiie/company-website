@@ -1,50 +1,69 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const body = document.body;
+  const header = document.querySelector("header");
   const menuToggle = document.querySelector(".mobile-toggle");
   const mobileMenu = document.querySelector(".nav-mobile");
-  const themeToggles = document.querySelectorAll(".theme-toggle");
-  const root = document.body;
-
-  const applyTheme = (theme) => {
-    root.setAttribute("data-theme", theme);
-    try {
-      localStorage.setItem("linkai-theme", theme);
-    } catch {
-      /* ignore storage issues */
-    }
+  const closeMobileMenu = () => {
+    if (!menuToggle || !mobileMenu) return;
+    menuToggle.setAttribute("aria-expanded", "false");
+    mobileMenu.hidden = true;
+    mobileMenu.classList.remove("active");
+    body.classList.remove("nav-open");
+  };
+  const openMobileMenu = () => {
+    if (!menuToggle || !mobileMenu) return;
+    menuToggle.setAttribute("aria-expanded", "true");
+    mobileMenu.hidden = false;
+    mobileMenu.classList.add("active");
+    body.classList.add("nav-open");
   };
 
-  const storedTheme = (() => {
-    try {
-      return localStorage.getItem("linkai-theme");
-    } catch {
-      return null;
-    }
-  })();
-
-  const hour = new Date().getHours();
-  const initialTheme =
-    storedTheme ||
-    (hour >= 7 && hour < 19 ? "light" : "dark");
-  applyTheme(initialTheme);
-
-  if (themeToggles.length) {
-    themeToggles.forEach((toggle) => {
-      toggle.addEventListener("click", () => {
-        const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-        applyTheme(next);
-      });
-    });
-  }
-
+  // Mobile Menu Toggle
   if (menuToggle && mobileMenu) {
     mobileMenu.hidden = true;
     menuToggle.addEventListener("click", () => {
       const expanded = menuToggle.getAttribute("aria-expanded") === "true";
-      menuToggle.setAttribute("aria-expanded", String(!expanded));
-      mobileMenu.hidden = expanded;
+      if (expanded) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => closeMobileMenu());
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) {
+        closeMobileMenu();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMobileMenu();
+      }
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!mobileMenu.classList.contains("active")) return;
+      const target = event.target;
+      if (mobileMenu.contains(target) || menuToggle.contains(target)) return;
+      closeMobileMenu();
     });
   }
 
+  // Header scroll state
+  if (header) {
+    const handleScroll = () => {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+  }
+
+  // Early Access Toast
   const toast = document.createElement("div");
   toast.className = "early-access-toast";
   toast.hidden = true;
@@ -54,12 +73,18 @@ document.addEventListener("DOMContentLoaded", () => {
   let toastTimer;
   const showToast = (message) => {
     toast.hidden = false;
+    // Small timeout to allow display:block to apply before opacity transition
+    setTimeout(() => {
+        toast.classList.add("visible");
+    }, 10);
     toast.querySelector("span").textContent = message || "Early access coming soon.";
-    toast.classList.add("visible");
+    
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => {
       toast.classList.remove("visible");
-      toast.hidden = true;
+      setTimeout(() => {
+          toast.hidden = true;
+      }, 300); // Wait for transition
     }, 2600);
   };
 
@@ -71,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Email obfuscation
   document.querySelectorAll("[data-email-user]").forEach((node) => {
     const user = node.getAttribute("data-email-user");
     const domain = node.getAttribute("data-email-domain");

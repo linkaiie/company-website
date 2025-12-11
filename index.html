@@ -23,7 +23,6 @@
             <a href="careers.html">Careers</a>
           </div>
           <div class="nav-actions">
-            <button class="theme-toggle" type="button" aria-label="Toggle theme"><span aria-hidden="true"></span></button>
             <div class="nav-cta">
               <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
               <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
@@ -31,7 +30,7 @@
           </div>
           <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
         </nav>
-        <div class="nav-mobile">
+        <div class="nav-mobile" hidden>
           <a href="index.html">Home</a>
           <a href="route.html">Product</a>
           <a href="solutions.html">Solutions</a>
@@ -71,33 +70,8 @@
               </div>
             </div>
             <div>
-              <div class="hero-visual">
-                <img src="assets/logo/linkai_logo_img.png" alt="LinkAI Route glyph" />
-                <div class="visual-stack">
-                  <div class="visual-chart">
-                    <strong>Console snapshot</strong>
-                    <div class="visual-bars">
-                      <div class="visual-bar" style="width: 80%"></div>
-                      <div class="visual-bar" style="width: 52%"></div>
-                      <div class="visual-bar" style="width: 95%"></div>
-                    </div>
-                    <p class="note">Projects · Workflows · Spend guardrails</p>
-                  </div>
-                  <div class="visual-stats">
-                    <div class="stat">
-                      <small class="note">Providers</small>
-                      <strong>11 connected</strong>
-                    </div>
-                    <div class="stat">
-                      <small class="note">Monitored spend</small>
-                      <strong>$1.28K tracked</strong>
-                    </div>
-                    <div class="stat">
-                      <small class="note">Latency</small>
-                      <strong>238ms avg</strong>
-                    </div>
-                  </div>
-                </div>
+              <div class="hero-visual-wrapper">
+                <img src="assets/images/hero_dashboard.png" alt="LinkAI Dashboard Interface" />
               </div>
             </div>
           </div>
@@ -112,22 +86,22 @@
           </div>
           <div class="card-grid">
             <div class="card">
-              <div class="icon-circle">API</div>
+              <img src="assets/images/icon_api.png" alt="Unified API" class="card-icon" />
               <h3>Unified API</h3>
               <p>One request format, multiple providers. Switch models without rewriting your code.</p>
             </div>
             <div class="card">
-              <div class="icon-circle">$</div>
+              <img src="assets/images/icon_credits.png" alt="Prepaid Credits" class="card-icon" />
               <h3>Prepaid credits</h3>
               <p>Flexible top-up model that fits any usage pattern — from $10 to large enterprise deposits.</p>
             </div>
             <div class="card">
-              <div class="icon-circle">WF</div>
+              <img src="assets/images/icon_workflows.png" alt="Workflows" class="card-icon" />
               <h3>Workflows & pipelines</h3>
               <p>Chain OCR, LLMs and custom logic into reusable flows for content, documents and more.</p>
             </div>
             <div class="card">
-              <div class="icon-circle">↺</div>
+              <img src="assets/images/icon_monitoring.png" alt="Monitoring" class="card-icon" />
               <h3>Monitoring & control</h3>
               <p>Built-in logs, rate limiting and usage analytics so you always know what’s going on.</p>
             </div>
@@ -318,7 +292,7 @@
           <div class="footer-grid">
             <div>
               <strong>LinkAI Ltd</strong>
-              <p>LinkAI Route keeps AI usage predictable with one API, one workflow builder and transparent prepaid billing.</p>
+              <p>LinkAI Route is the prepaid AI control plane—swap providers without rewrites, enforce guardrails, and give finance live usage clarity from one dashboard.</p>
             </div>
           <div>
             <h4>Product</h4>

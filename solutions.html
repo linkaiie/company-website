@@ -3,20 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Solutions built on LinkAI Route: cross-border content pipelines, document &amp; OCR automation, and multi-provider AI infrastructure control." />
+    <meta name="theme-color" content="#070A12" />
     <title>LinkAI Route — solutions</title>
-    <link rel="icon" href="assets/favicon/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/main.js"></script>
   </head>
   <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
       <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="logo">LinkAI</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="logo">
+            <img src="assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
+          </a>
           <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="route.html">Product</a>
-            <a href="solutions.html" class="active">Solutions</a>
+            <a href="solutions.html" class="active" aria-current="page">Solutions</a>
             <a href="pricing.html">Pricing</a>
             <a href="docs.html">Docs</a>
             <a href="company.html">Company</a>
@@ -24,26 +37,26 @@
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+              <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
               <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
             </div>
           </div>
-          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
         </nav>
-        <div class="nav-mobile" hidden>
+        <div class="nav-mobile" id="nav-mobile" hidden>
           <a href="index.html">Home</a>
           <a href="route.html">Product</a>
-          <a href="solutions.html" class="active">Solutions</a>
+          <a href="solutions.html" class="active" aria-current="page">Solutions</a>
           <a href="pricing.html">Pricing</a>
           <a href="docs.html">Docs</a>
           <a href="company.html">Company</a>
           <a href="careers.html">Careers</a>
-          <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+          <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
           <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main">
       <section class="hero">
         <div class="container">
           <div class="section-title">
@@ -71,7 +84,7 @@
               <h3>How LinkAI Route helps</h3>
               <ol class="workflow-steps">
                 <li><strong>Normalize data</strong> — ingest product feeds into a consistent schema via a single API.</li>
-                <li><strong>Translate & localize</strong> — swap providers per language without touching code.</li>
+                <li><strong>Translate &amp; localize</strong> — swap providers per language without touching code.</li>
                 <li><strong>Publish</strong> — push to Amazon, Shopify and other channels through reusable workflows.</li>
               </ol>
             </div>
@@ -85,7 +98,7 @@
       <section>
         <div class="container">
           <div class="section-title">
-            <h2>02 · Document & OCR automation</h2>
+            <h2>02 · Document &amp; OCR automation</h2>
             <p>Operations teams process PDFs, invoices and contracts all day. Manual review or brittle scripts lead to slow turnarounds.</p>
           </div>
           <div class="grid-two">
@@ -129,7 +142,22 @@
             </div>
           </div>
           <div class="alert">
-            Example workflow: Application request → Route gateway → Provider fallback logic → Logs & spend in dashboard.
+            Example workflow: Application request → Route gateway → Provider fallback logic → Logs &amp; spend in dashboard.
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <h2>Want to map your workflow to Route?</h2>
+              <p>Tell us your use case and we’ll help sketch a routing + workflow setup that matches your constraints.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="#" data-early-access="Tell us what you’re building — we’ll reply within 1 business day.">Request early access</a>
+              <a class="btn btn-secondary" href="company.html#contact">Contact</a>
+            </div>
           </div>
         </div>
       </section>

@@ -3,16 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LinkAI Ltd privacy policy for LinkAI Route." />
+    <meta name="theme-color" content="#070A12" />
     <title>LinkAI Ltd — Privacy Policy</title>
-    <link rel="icon" href="../assets/favicon/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <script defer src="../assets/js/main.js"></script>
   </head>
   <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
       <div class="container">
-        <nav class="nav">
-          <a href="../index.html" class="logo">LinkAI</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="../index.html" class="logo">
+            <img src="../assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
+          </a>
           <div class="nav-links">
             <a href="../index.html">Home</a>
             <a href="../route.html">Product</a>
@@ -24,13 +37,13 @@
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+              <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
               <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
             </div>
           </div>
-          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
         </nav>
-        <div class="nav-mobile" hidden>
+        <div class="nav-mobile" id="nav-mobile" hidden>
           <a href="../index.html">Home</a>
           <a href="../route.html">Product</a>
           <a href="../solutions.html">Solutions</a>
@@ -38,18 +51,18 @@
           <a href="../docs.html">Docs</a>
           <a href="../company.html">Company</a>
           <a href="../careers.html">Careers</a>
-          <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+          <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
           <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main">
       <section class="hero">
         <div class="container">
           <div class="section-title">
             <div class="eyebrow">Legal</div>
             <h1>Privacy Policy</h1>
-            <p>High-level placeholder policy. Replace with final wording when your legal counsel is ready.</p>
+            <p>Our privacy policy describes the data we collect and how we use it to operate LinkAI Route.</p>
           </div>
         </div>
       </section>
@@ -67,9 +80,24 @@
             <h3>Your rights</h3>
             <p>
               Contact
-              <span class="email-text" data-email-user="info" data-email-domain="LinkAI.ie">info[at]LinkAI.ie</span>
+              <span class="email-text" data-email-user="info" data-email-domain="linkai.ie">info[at]linkai.ie</span>
               for data access, export or deletion requests.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <h2>Questions about data handling?</h2>
+              <p>Contact us and we’ll clarify retention, logging, and request flows.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="../company.html#contact">Contact</a>
+              <a class="btn btn-secondary" href="#" data-early-access="Tell us your compliance needs — we’ll reply within 1 business day.">Request early access</a>
+            </div>
           </div>
         </div>
       </section>
@@ -95,6 +123,7 @@
             <div class="footer-links">
               <a href="../company.html#about">About</a>
               <a href="../company.html#contact">Contact</a>
+              <a href="../careers.html">Careers</a>
             </div>
           </div>
         </div>

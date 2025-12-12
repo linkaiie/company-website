@@ -3,16 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Careers at LinkAI Ltd: help build LinkAI Route, a unified AI gateway and workflow platform." />
+    <meta name="theme-color" content="#070A12" />
     <title>LinkAI Ltd — careers</title>
-    <link rel="icon" href="assets/favicon/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/main.js"></script>
   </head>
   <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
       <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="logo">LinkAI</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="logo">
+            <img src="assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
+          </a>
           <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="route.html">Product</a>
@@ -20,36 +33,36 @@
             <a href="pricing.html">Pricing</a>
             <a href="docs.html">Docs</a>
             <a href="company.html">Company</a>
-            <a href="careers.html" class="active">Careers</a>
+            <a href="careers.html" class="active" aria-current="page">Careers</a>
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+              <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
               <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
             </div>
           </div>
-          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
         </nav>
-        <div class="nav-mobile" hidden>
+        <div class="nav-mobile" id="nav-mobile" hidden>
           <a href="index.html">Home</a>
           <a href="route.html">Product</a>
           <a href="solutions.html">Solutions</a>
           <a href="pricing.html">Pricing</a>
           <a href="docs.html">Docs</a>
           <a href="company.html">Company</a>
-          <a href="careers.html" class="active">Careers</a>
-          <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+          <a href="careers.html" class="active" aria-current="page">Careers</a>
+          <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
           <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main">
       <section class="hero">
         <div class="container">
           <div class="section-title">
             <div class="beta-pill">Open role · 2 positions</div>
             <div class="eyebrow">Careers</div>
-            <h1>SaaS Platform Engineer & Growth Developer</h1>
+            <h1>SaaS Platform Engineer &amp; Growth Developer</h1>
             <p>Help us build LinkAI Route, a unified API gateway and credit-based SaaS platform that lets teams access multiple AI providers through one interface.</p>
             <p class="note">You’ll build, operate and shape the product alongside the founder — ideal for someone with a builder mindset who enjoys experimentation.</p>
           </div>
@@ -78,7 +91,7 @@
             </div>
           </div>
           <div class="card">
-            <h3>Compensation & setup</h3>
+            <h3>Compensation &amp; setup</h3>
             <ul class="list">
               <li>Total positions: 2 (temporary full-time)</li>
               <li>Credit for tooling and hardware support</li>
@@ -99,7 +112,7 @@
           </div>
           <div class="grid-two">
             <div class="card">
-              <h3>Platform & technical</h3>
+                <h3>Platform &amp; technical</h3>
               <ul class="list">
                 <li>Develop core LinkAI Route features: API gateway, dashboards, credit system.</li>
                 <li>Maintain Docker/VPS deployments, monitoring and stability.</li>
@@ -108,7 +121,7 @@
               </ul>
             </div>
             <div class="card">
-              <h3>Growth & creative</h3>
+                <h3>Growth &amp; creative</h3>
               <ul class="list">
                 <li>Shape onboarding flows, landing pages and product messaging.</li>
                 <li>Prototype docs, tutorials and lightweight release notes.</li>
@@ -152,6 +165,21 @@
             <h3>How to apply</h3>
             <p>Email <a class="email-link" data-email-user="jobs" data-email-domain="linkai.ie">jobs[at]linkai.ie</a> with a brief introduction, links to relevant work (GitHub, portfolio, launch notes, etc.) and a quick note on why platform + growth work excites you.</p>
             <p>We review every application manually and respond within one week. Interviews are lightweight: async project chat, a collaborative technical ideation session, and a short paid trial task when possible.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <h2>Interested in building with us?</h2>
+              <p>Send a short intro and links to work you’re proud of.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="company.html#contact">Contact</a>
+              <a class="btn btn-secondary" href="#" data-early-access="Not hiring for your role? Tell us anyway — we’ll keep you in mind.">General interest</a>
+            </div>
           </div>
         </div>
       </section>

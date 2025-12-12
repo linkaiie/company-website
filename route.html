@@ -3,19 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LinkAI Route product overview: connect providers, manage keys, monitor usage, and build workflows from one AI control plane." />
+    <meta name="theme-color" content="#070A12" />
     <title>LinkAI Route — product overview</title>
-    <link rel="icon" href="assets/favicon/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/main.js"></script>
   </head>
   <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
       <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="logo">LinkAI</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="logo">
+            <img src="assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
+          </a>
           <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="route.html" class="active">Product</a>
+            <a href="route.html" class="active" aria-current="page">Product</a>
             <a href="solutions.html">Solutions</a>
             <a href="pricing.html">Pricing</a>
             <a href="docs.html">Docs</a>
@@ -24,26 +37,26 @@
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+              <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
               <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
             </div>
           </div>
-          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
         </nav>
-        <div class="nav-mobile" hidden>
+        <div class="nav-mobile" id="nav-mobile" hidden>
           <a href="index.html">Home</a>
-          <a href="route.html" class="active">Product</a>
+          <a href="route.html" class="active" aria-current="page">Product</a>
           <a href="solutions.html">Solutions</a>
           <a href="pricing.html">Pricing</a>
           <a href="docs.html">Docs</a>
           <a href="company.html">Company</a>
           <a href="careers.html">Careers</a>
-          <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+          <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
           <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main">
       <section class="hero">
         <div class="container">
           <div class="hero-grid">
@@ -53,8 +66,8 @@
               <h1>LinkAI Route — your AI API control panel</h1>
               <p>Connect providers, manage keys, monitor usage and build workflows — all in one place.</p>
               <div class="hero-actions">
-                <a class="btn btn-primary" href="pricing.html" data-early-access="Pricing unlocks with the beta launch.">Compare plans</a>
-                <a class="btn btn-secondary" href="docs.html" data-early-access="Docs preview available to early teams.">View docs</a>
+                <a class="btn btn-primary" href="pricing.html">Compare plans</a>
+                <a class="btn btn-secondary" href="docs.html">View docs</a>
               </div>
             </div>
             <div class="mockup">
@@ -94,7 +107,7 @@
           <div class="card-grid">
             <div class="card">
               <div class="icon-circle">01</div>
-              <h3>Providers & keys</h3>
+              <h3>Providers &amp; keys</h3>
               <p>Add and manage keys for multiple providers. Keep everything organised for your team.</p>
             </div>
             <div class="card">
@@ -104,7 +117,7 @@
             </div>
             <div class="card">
               <div class="icon-circle">03</div>
-              <h3>Credits & billing</h3>
+              <h3>Credits &amp; billing</h3>
               <p>Prepaid credits with live usage breakdowns. Top up any amount, share credits across projects.</p>
             </div>
             <div class="card">
@@ -169,7 +182,7 @@
               </div>
               <div class="mockup-card">
                 <strong>Top models</strong>
-                <p class="note">Provider split & cost</p>
+                  <p class="note">Provider split &amp; cost</p>
               </div>
             </div>
           </div>
@@ -193,6 +206,21 @@
             <div class="card">
               <h3>Business</h3>
               <p>Clear invoices, predictable spend and no vendor lock-in. Procurement-friendly by design.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <h2>Ready to evaluate LinkAI Route?</h2>
+              <p>Request early access and we’ll walk you through routing, credits, and governance for your workload.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="#" data-early-access="Tell us what you’re building — we’ll reply within 1 business day.">Request early access</a>
+              <a class="btn btn-secondary" href="company.html#contact">Contact</a>
             </div>
           </div>
         </div>

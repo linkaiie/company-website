@@ -3,47 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="LinkAI Route pricing: simple subscriptions plus prepaid credits, with clear usage tracking for engineering and finance." />
+    <meta name="theme-color" content="#070A12" />
     <title>LinkAI Route — pricing</title>
-    <link rel="icon" href="assets/favicon/favicon-32x32.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/main.js"></script>
   </head>
   <body class="page">
+    <a class="skip-link" href="#main">Skip to content</a>
     <header>
       <div class="container">
-        <nav class="nav">
-          <a href="index.html" class="logo">LinkAI</a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html" class="logo">
+            <img src="assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
+          </a>
           <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="route.html">Product</a>
             <a href="solutions.html">Solutions</a>
-            <a href="pricing.html" class="active">Pricing</a>
+            <a href="pricing.html" class="active" aria-current="page">Pricing</a>
             <a href="docs.html">Docs</a>
             <a href="company.html">Company</a>
             <a href="careers.html">Careers</a>
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+              <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
               <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
             </div>
           </div>
-          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+          <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
         </nav>
-        <div class="nav-mobile" hidden>
+        <div class="nav-mobile" id="nav-mobile" hidden>
           <a href="index.html">Home</a>
           <a href="route.html">Product</a>
           <a href="solutions.html">Solutions</a>
-          <a href="pricing.html" class="active">Pricing</a>
+          <a href="pricing.html" class="active" aria-current="page">Pricing</a>
           <a href="docs.html">Docs</a>
           <a href="company.html">Company</a>
           <a href="careers.html">Careers</a>
-          <a class="btn btn-secondary" href="#" data-early-access="Sign-in opens with the public launch.">Sign in</a>
+          <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
           <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
         </div>
       </div>
     </header>
-    <main>
+    <main id="main">
       <section class="hero">
         <div class="container">
           <div class="section-title">
@@ -108,7 +121,7 @@
               <h3>$50 / month</h3>
               <p>Production workloads.</p>
               <ul class="list">
-                <li>SSO & RBAC</li>
+                <li>SSO &amp; RBAC</li>
                 <li>Audit logs</li>
                 <li>Shared credits</li>
               </ul>
@@ -116,7 +129,7 @@
             <div class="pricing-card">
               <div class="badge">Custom</div>
               <h3>Let’s talk</h3>
-              <p>Large deployments & compliance.</p>
+              <p>Large deployments &amp; compliance.</p>
               <ul class="list">
                 <li>Dedicated support</li>
                 <li>Custom contracts</li>
@@ -148,6 +161,21 @@
             <div class="card">
               <h3>Need help convincing finance?</h3>
               <p>We provide invoice templates, reconciliation exports and can talk directly with your finance lead.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="cta-card">
+            <div>
+              <h2>Need help picking a plan?</h2>
+              <p>Tell us your expected volume and governance needs and we’ll recommend a starting setup.</p>
+            </div>
+            <div class="cta-actions">
+              <a class="btn btn-primary" href="#" data-early-access="Tell us what you’re building — we’ll reply within 1 business day.">Request early access</a>
+              <a class="btn btn-secondary" href="company.html#contact">Contact</a>
             </div>
           </div>
         </div>

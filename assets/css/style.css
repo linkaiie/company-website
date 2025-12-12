@@ -33,7 +33,7 @@
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -170,6 +170,10 @@ section + section {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
+.hero + section {
+  padding-top: 3.5rem;
+}
+
 /* Header & Nav */
 header {
   position: fixed;
@@ -303,10 +307,14 @@ header.scrolled .nav {
 
 /* Hero Section */
 .hero {
-  padding-top: calc(var(--header-offset) + 5rem);
+  padding: calc(var(--header-offset) + 3.5rem) 0 3.5rem;
   display: grid;
   align-items: center;
   background: radial-gradient(900px circle at 50% 0%, rgba(167, 139, 250, 0.12) 0%, transparent 60%);
+}
+
+.hero .section-title {
+  margin: 0 auto;
 }
 
 .hero-grid {
@@ -419,6 +427,45 @@ header.scrolled .nav {
   margin-bottom: 0;
 }
 
+.card p {
+  max-width: none;
+}
+
+.prose {
+  max-width: 860px;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+}
+
+.prose p {
+  color: var(--color-text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.prose h3 {
+  margin: 2rem 0 0.75rem;
+}
+
+.prose p.note + h3 {
+  margin-top: 1.25rem;
+}
+
+.prose .list {
+  gap: 0.6rem;
+}
+
+.prose .list li {
+  font-size: 1rem;
+}
+
+.prose .note {
+  color: var(--color-muted);
+  opacity: 0.85;
+}
+
 .card::before {
   content: "";
   position: absolute;
@@ -462,7 +509,7 @@ header.scrolled .nav {
 .section-title {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 5rem;
+  margin: 0 auto 4rem;
 }
 
 .section-title.section-title--compact {
@@ -589,6 +636,7 @@ header.scrolled .nav {
 
 .solution-card p {
   margin: 0;
+  max-width: none;
 }
 
 .mockup {
@@ -713,6 +761,10 @@ footer {
   align-items: flex-start;
 }
 
+.footer-grid p {
+  max-width: none;
+}
+
 .footer-links a {
   display: block;
   margin-bottom: 0.5rem;
@@ -762,6 +814,14 @@ footer {
     padding: 6rem 0;
   }
 
+  .hero + section {
+    padding-top: 3.25rem;
+  }
+
+  .hero {
+    padding: calc(var(--header-offset) + 3rem) 0 3.25rem;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
@@ -797,7 +857,7 @@ footer {
   }
 
   .section-title {
-    margin: 0 auto 3rem;
+    margin: 0 auto 2.75rem;
   }
 
   .card {
@@ -913,6 +973,7 @@ footer {
   font-style: italic;
   color: var(--color-text);
   margin-bottom: 1rem;
+  max-width: none;
 }
 
 .testimonial small {
@@ -1251,7 +1312,11 @@ pre {
   }
 
   .hero {
-    padding-top: calc(var(--header-offset) + 3rem);
+    padding: calc(var(--header-offset) + 2.5rem) 0 3rem;
+  }
+
+  .hero + section {
+    padding-top: 3rem;
   }
 
   .hero-actions {
@@ -1276,7 +1341,7 @@ pre {
   }
 
   .section-title {
-    margin: 0 auto 2.5rem;
+    margin: 0 auto 2.25rem;
   }
 
   .card {

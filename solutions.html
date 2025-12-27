@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Solutions built on LinkAI Route: cross-border content pipelines, document &amp; OCR automation, and multi-provider AI infrastructure control." />
+    <meta name="description" content="Solutions built on LinkAI Route: API governance, project isolation, credits, and usage visibility." />
     <meta name="theme-color" content="#070A12" />
     <title>LinkAI Route — solutions</title>
 
@@ -27,14 +27,14 @@
             <a href="route.html">Product</a>
             <a href="solutions.html" class="active" aria-current="page">Solutions</a>
             <a href="pricing.html">Pricing</a>
-            <a href="docs.html">Docs</a>
+            <a href="https://docs.linkai.ie">Docs</a>
             <a href="company.html">Company</a>
             <a href="careers.html">Careers</a>
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
-              <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
+              <a class="btn btn-secondary" href="https://route.linkai.ie/login">Sign in</a>
+              <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
             </div>
           </div>
           <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
@@ -44,11 +44,11 @@
           <a href="route.html">Product</a>
           <a href="solutions.html" class="active" aria-current="page">Solutions</a>
           <a href="pricing.html">Pricing</a>
-          <a href="docs.html">Docs</a>
+          <a href="https://docs.linkai.ie">Docs</a>
           <a href="company.html">Company</a>
           <a href="careers.html">Careers</a>
-          <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
-          <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
+          <a class="btn btn-secondary" href="https://route.linkai.ie/login">Sign in</a>
+          <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
         </div>
       </div>
     </header>
@@ -56,10 +56,10 @@
       <section class="hero">
         <div class="container">
           <div class="section-title">
-            <div class="beta-pill">Use cases shipping soon</div>
+            <div class="beta-pill">Use cases</div>
             <div class="eyebrow">Solutions</div>
-            <h1>Built for real workloads that run daily</h1>
-            <p>Use LinkAI Route to power production workflows across content, documents and infrastructure control. Below are three packaged scenarios to help teams get started.</p>
+            <h1>Built for teams shipping AI in production</h1>
+            <p>LinkAI Route helps teams manage API access, credits, and logs without building custom tooling.</p>
           </div>
         </div>
       </section>
@@ -67,26 +67,26 @@
       <section>
         <div class="container">
           <div class="section-title">
-            <h2>01 · Cross-border content pipelines</h2>
-            <p>E-commerce teams juggle multiple marketplaces, languages and compliance rules. Manual copywriting or scattered scripts slow launches.</p>
+            <h2>01 · AI product teams</h2>
+            <p>Multiple environments, shared keys, and hard-to-track usage make AI features brittle at scale.</p>
           </div>
           <div class="grid-two">
             <div class="card">
               <h3>Pain points</h3>
-              <p>High-volume product changes require fast translation, tone adjustments and marketplace formatting.</p>
-              <p>Legacy automation breaks when providers change models or rate limits.</p>
+              <p>Inconsistent auth and logging across teams leads to slow debugging and unpredictable spend.</p>
+              <p>Rate limits and usage policies are hard to enforce across environments.</p>
             </div>
             <div class="card">
               <h3>How LinkAI Route helps</h3>
               <ol class="workflow-steps">
-                <li><strong>Normalize data</strong> — ingest product feeds into a consistent schema via a single API.</li>
-                <li><strong>Translate &amp; localize</strong> — swap providers per language without touching code.</li>
-                <li><strong>Publish</strong> — push to Amazon, Shopify and other channels through reusable workflows.</li>
+                <li><strong>Isolate projects</strong> — separate production, staging, and experiments.</li>
+                <li><strong>Use one API</strong> — OpenAI-compatible requests with streaming.</li>
+                <li><strong>Trace everything</strong> — logs and usage by project and API key.</li>
               </ol>
             </div>
           </div>
           <div class="alert">
-            Example workflow: Product feed → Classifier (Provider A) → Localization prompt (Provider B) → Compliance check → Output to CMS.
+            Example flow: Client → LinkAI Route → Provider → Logs &amp; usage dashboard.
           </div>
         </div>
       </section>
@@ -94,25 +94,25 @@
       <section>
         <div class="container">
           <div class="section-title">
-            <h2>02 · Document &amp; OCR automation</h2>
-            <p>Operations teams process PDFs, invoices and contracts all day. Manual review or brittle scripts lead to slow turnarounds.</p>
+            <h2>02 · Agencies &amp; internal platforms</h2>
+            <p>Teams serving multiple clients need per-project limits, billing clarity, and reliable logs.</p>
           </div>
           <div class="grid-two">
             <div class="card">
               <h3>Pain points</h3>
-              <p>Different document layouts require multiple OCR services and LLM cleanup. Finance needs clear logs on what was read when.</p>
+              <p>Usage per client is hard to attribute, and runaway spend can’t be controlled quickly.</p>
             </div>
             <div class="card">
               <h3>How LinkAI Route helps</h3>
               <ol class="workflow-steps">
-                <li><strong>Capture</strong> — upload documents to LinkAI storage or your own bucket.</li>
-                <li><strong>Extract</strong> — run OCR + LLM extraction as a pipeline with retries and logging.</li>
-                <li><strong>Deliver</strong> — send structured JSON or CSV downstream via webhooks.</li>
+                <li><strong>Project isolation</strong> — one project per client with its own keys.</li>
+                <li><strong>Limits per client</strong> — RPM, concurrency, and daily caps.</li>
+                <li><strong>Export usage</strong> — CSV exports for invoicing and reporting.</li>
               </ol>
             </div>
           </div>
           <div class="alert">
-            Example workflow: Intake API → OCR (Provider C) → Field mapping logic → LLM summarization → ERP webhook.
+            Example flow: Client app → Project key → Gateway → Usage export.
           </div>
         </div>
       </section>
@@ -120,25 +120,25 @@
       <section>
         <div class="container">
           <div class="section-title">
-            <h2>03 · Multi-provider AI infrastructure</h2>
-            <p>Enterprise AI stacks need redundancy. Teams want to try new models quickly without re-architecting everything.</p>
+            <h2>03 · Ops &amp; finance governance</h2>
+            <p>Leadership needs predictable spend, audit trails, and clear limits for AI usage.</p>
           </div>
           <div class="grid-two">
             <div class="card">
               <h3>Pain points</h3>
-              <p>Every provider introduces new SDKs, auth patterns and analytics. Billing teams lose track of spend.</p>
+              <p>Spend spikes are hard to trace, and teams lack a single source of truth.</p>
             </div>
             <div class="card">
               <h3>How LinkAI Route helps</h3>
               <ol class="workflow-steps">
-                <li><strong>Connect once</strong> — add API keys inside Route with RBAC controls.</li>
-                <li><strong>Use one format</strong> — send traffic through the unified API and change models via parameters.</li>
-                <li><strong>Monitor centrally</strong> — logs, credits, alerts and dashboards in one place.</li>
+                <li><strong>Credits + ledger</strong> — balances and refunds tracked in Billing.</li>
+                <li><strong>Rate limits</strong> — cap RPM, concurrency, and daily usage.</li>
+                <li><strong>Audit-ready logs</strong> — request history with status and latency.</li>
               </ol>
             </div>
           </div>
           <div class="alert">
-            Example workflow: Application request → Route gateway → Provider fallback logic → Logs &amp; spend in dashboard.
+            Example flow: Request → Credits ledger → Usage export → Finance reporting.
           </div>
         </div>
       </section>
@@ -147,11 +147,11 @@
         <div class="container">
           <div class="cta-card">
             <div>
-              <h2>Want to map your workflow to Route?</h2>
-              <p>Tell us your use case and we’ll help sketch a routing + workflow setup that matches your constraints.</p>
+              <h2>Want to map your routing setup to Route?</h2>
+              <p>Tell us your use case and we’ll help map a routing setup that fits your constraints.</p>
             </div>
             <div class="cta-actions">
-              <a class="btn btn-primary" href="#" data-early-access="Tell us what you’re building — we’ll reply within 1 business day.">Request early access</a>
+              <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
               <a class="btn btn-secondary" href="company.html#contact">Contact</a>
             </div>
           </div>
@@ -163,7 +163,7 @@
           <div class="footer-grid">
             <div>
               <strong>LinkAI Ltd</strong>
-              <p>LinkAI Route is the prepaid AI control plane—swap providers without rewrites, enforce guardrails, and give finance live usage clarity from one dashboard.</p>
+              <p>LinkAI Route is an OpenAI-compatible gateway with credits, rate limits, and request logs in one dashboard.</p>
             </div>
           <div>
             <h4>Product</h4>
@@ -171,7 +171,7 @@
               <a href="route.html">LinkAI Route</a>
               <a href="solutions.html">Solutions</a>
               <a href="pricing.html">Pricing</a>
-              <a href="docs.html">Docs</a>
+              <a href="https://docs.linkai.ie">Docs</a>
             </div>
           </div>
           <div>

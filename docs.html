@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Developer docs preview for LinkAI Route: a unified API surface for routing and governing multi-provider AI usage." />
+    <meta name="description" content="LinkAI Route developer docs for authentication, chat completions, OpenAI SDK usage, and errors." />
     <meta name="theme-color" content="#070A12" />
-    <title>LinkAI Route — docs preview</title>
+    <title>LinkAI Route — documentation</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
@@ -27,14 +27,14 @@
             <a href="route.html">Product</a>
             <a href="solutions.html">Solutions</a>
             <a href="pricing.html">Pricing</a>
-            <a href="docs.html" class="active" aria-current="page">Docs</a>
+            <a href="https://docs.linkai.ie" class="active" aria-current="page">Docs</a>
             <a href="company.html">Company</a>
             <a href="careers.html">Careers</a>
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
-              <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
+              <a class="btn btn-secondary" href="https://route.linkai.ie/login">Sign in</a>
+              <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
             </div>
           </div>
           <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
@@ -44,11 +44,11 @@
           <a href="route.html">Product</a>
           <a href="solutions.html">Solutions</a>
           <a href="pricing.html">Pricing</a>
-          <a href="docs.html" class="active" aria-current="page">Docs</a>
+          <a href="https://docs.linkai.ie" class="active" aria-current="page">Docs</a>
           <a href="company.html">Company</a>
           <a href="careers.html">Careers</a>
-          <a class="btn btn-secondary" href="#" data-toast="Sign-in opens with the public launch.">Sign in</a>
-          <a class="btn btn-primary" href="#" data-early-access="Early access requests open soon.">Get started</a>
+          <a class="btn btn-secondary" href="https://route.linkai.ie/login">Sign in</a>
+          <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
         </div>
       </div>
     </header>
@@ -56,10 +56,40 @@
       <section class="hero">
         <div class="container">
           <div class="section-title">
-            <div class="beta-pill">Docs preview</div>
-            <div class="eyebrow">Documentation</div>
-            <h1>API docs are on the way.</h1>
-            <p>We’re finishing the developer portal. Meanwhile, here’s a preview of the API surface and how to get started.</p>
+            <div class="beta-pill">Documentation</div>
+            <div class="eyebrow">Docs</div>
+            <h1>LinkAI Route developer docs</h1>
+            <p>Everything you need to integrate the OpenAI-compatible gateway, from authentication to streaming and errors.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://docs.linkai.ie">Open docs</a>
+              <a class="btn btn-secondary" href="https://route.linkai.ie/console">Go to console</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="section-title">
+            <h2>Quick links</h2>
+            <p>Jump straight to the guides you need most.</p>
+          </div>
+          <div class="card-grid">
+            <a class="card" href="https://docs.linkai.ie/docs/getting-started">
+              <h3>Getting started</h3>
+              <p>Create a key and send your first request.</p>
+            </a>
+            <a class="card" href="https://docs.linkai.ie/docs/gateway-api">
+              <h3>Chat Completions API</h3>
+              <p>Request schema, streaming, and response format.</p>
+            </a>
+            <a class="card" href="https://docs.linkai.ie/docs/openai-sdk">
+              <h3>OpenAI SDK</h3>
+              <p>Drop-in usage with baseURL set to LinkAI Route.</p>
+            </a>
+            <a class="card" href="https://docs.linkai.ie/docs/errors">
+              <h3>Errors &amp; retries</h3>
+              <p>Statuses, error codes, and retry guidance.</p>
+            </a>
           </div>
         </div>
       </section>
@@ -67,15 +97,14 @@
         <div class="container">
           <div class="card">
             <h3>Sample request</h3>
-            <pre class="code-block"><code>curl https://api.linkai.ie/v1/chat \
-  -H "Authorization: Bearer YOUR_LINKAI_KEY" \
+            <pre class="code-block"><code>curl https://api.linkai.ie/v1/chat/completions \
+  -H "Authorization: Bearer &lt;LINKAI_API_KEY&gt;" \
   -H "Content-Type: application/json" \
   -d '{
-    "provider": "openai",
-    "model": "MODEL_ID",
-    "input": "Hello from LinkAI Route"
+    "model": "openai/gpt-oss-120b",
+    "messages": [{"role":"user","content":"Hello"}]
   }'</code></pre>
-            <p class="section-note">Replace provider/model with any configured option. Logs, spend and retries are handled by LinkAI Route.</p>
+            <p class="section-note">Use the OpenAI-compatible request schema. Streaming is supported via <code>stream: true</code>.</p>
           </div>
         </div>
       </section>
@@ -83,35 +112,17 @@
         <div class="container">
           <div class="grid-two">
             <div class="card">
-              <h3>Coming soon</h3>
-              <ul class="list">
-                <li>Full reference covering chat, completions, embeddings, OCR jobs</li>
-                <li>Workflow DSL docs with templates</li>
-                <li>Guides for Node.js, Python and Go</li>
-              </ul>
-            </div>
-            <div class="card">
-              <h3>Need early access?</h3>
+              <h3>Need help?</h3>
               <p>
                 Email
                 <a class="email-link" data-email-user="info" data-email-domain="linkai.ie">info[at]linkai.ie</a>
-                and we’ll share the pre-release documentation PDF.
+                and we’ll get you to the right engineer.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container">
-          <div class="cta-card">
-            <div>
-              <h2>Want the full API reference?</h2>
-              <p>Request early access and we’ll share the latest docs and examples.</p>
-            </div>
-            <div class="cta-actions">
-              <a class="btn btn-primary" href="#" data-early-access="Tell us what you’re building — we’ll reply within 1 business day.">Request early access</a>
-              <a class="btn btn-secondary" href="company.html#contact">Contact</a>
+            <div class="card">
+              <h3>Console access</h3>
+              <p>Manage projects, API keys, credits, usage, and logs from the console.</p>
+              <a class="btn btn-secondary" href="https://route.linkai.ie/console">Open console</a>
             </div>
           </div>
         </div>
@@ -122,7 +133,7 @@
         <div class="footer-grid">
           <div>
             <strong>LinkAI Ltd</strong>
-            <p>LinkAI Route is the prepaid AI control plane—swap providers without rewrites, enforce guardrails, and give finance live usage clarity from one dashboard.</p>
+            <p>LinkAI Route is an OpenAI-compatible gateway with credits, rate limits, and request logs in one dashboard.</p>
           </div>
           <div>
             <h4>Product</h4>
@@ -130,7 +141,7 @@
               <a href="route.html">LinkAI Route</a>
               <a href="solutions.html">Solutions</a>
               <a href="pricing.html">Pricing</a>
-              <a href="docs.html">Docs</a>
+              <a href="https://docs.linkai.ie">Docs</a>
             </div>
           </div>
             <div>

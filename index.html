@@ -58,19 +58,19 @@
           <div class="hero-grid">
             <div>
               <div class="hero-meta">
-                <span class="meta-pill highlight">Live now</span>
+                <span class="meta-pill highlight">Production ready</span>
                 <span class="meta-pill">OpenAI-compatible gateway</span>
               </div>
-              <p class="hero-tagline">OpenAI-compatible API gateway</p>
+              <p class="hero-tagline">AI usage control plane</p>
               <h1>Route, bill, and govern AI usage from one console.</h1>
               <p>
-                LinkAI Route provides a single chat completions endpoint plus project-level keys, credits, rate limits, and logs so teams can ship AI features with confidence.
+                LinkAI Route provides a single chat completions endpoint with project-level keys, credits, guardrails, and audit logs so teams can ship AI features with confidence.
               </p>
               <div class="hero-actions">
                 <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
                 <a class="btn btn-secondary" href="https://docs.linkai.ie">Read docs</a>
               </div>
-              <p class="note">Credits-based billing, streaming support, and detailed usage logs out of the box.</p>
+              <p class="note">Credits-based billing, streaming support, and audit-ready logs out of the box.</p>
               <div class="brand-grid">
                 <span class="image-chip">Developers</span>
                 <span class="image-chip">Ops teams</span>
@@ -102,24 +102,34 @@
           </div>
           <div class="card-grid">
             <div class="card">
-              <img src="assets/images/icon_api.svg" width="64" height="64" loading="lazy" decoding="async" alt="Unified API" class="card-icon" />
+              <img src="assets/images/icon_api.svg" width="64" height="64" loading="lazy" decoding="async" alt="OpenAI-compatible API" class="card-icon" />
               <h3>OpenAI-compatible API</h3>
-              <p>Use the familiar chat completions format with streaming support.</p>
+              <p>Keep the same chat completions schema with streaming support.</p>
             </div>
             <div class="card">
-              <img src="assets/images/icon_credits.svg" width="64" height="64" loading="lazy" decoding="async" alt="Prepaid credits" class="card-icon" />
+              <img src="assets/images/icon_credits.svg" width="64" height="64" loading="lazy" decoding="async" alt="Credits and billing" class="card-icon" />
               <h3>Credits &amp; billing</h3>
-              <p>Top up credits with Stripe and track balances in real time.</p>
+              <p>Self-serve top ups with real-time balance visibility.</p>
             </div>
             <div class="card">
               <img src="assets/images/icon_workflows.svg" width="64" height="64" loading="lazy" decoding="async" alt="Projects and API keys" class="card-icon" />
               <h3>Projects &amp; API keys</h3>
-              <p>Create projects, rotate keys, and separate usage by environment.</p>
+              <p>Isolate environments, rotate keys, and control access per project.</p>
             </div>
             <div class="card">
-              <img src="assets/images/icon_monitoring.svg" width="64" height="64" loading="lazy" decoding="async" alt="Monitoring and control" class="card-icon" />
+              <img src="assets/images/icon_monitoring.svg" width="64" height="64" loading="lazy" decoding="async" alt="Rate limits and logs" class="card-icon" />
               <h3>Rate limits &amp; logs</h3>
-              <p>Enforce RPM, concurrency, and daily caps with detailed request logs.</p>
+              <p>Set RPM, concurrency, and daily caps with full request logs.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/icon_alerts.svg" width="64" height="64" loading="lazy" decoding="async" alt="Alerts and guardrails" class="card-icon" />
+              <h3>Alerts &amp; guardrails</h3>
+              <p>Get notified on balance thresholds, limit breaches, and anomalies.</p>
+            </div>
+            <div class="card">
+              <img src="assets/images/icon_exports.svg" width="64" height="64" loading="lazy" decoding="async" alt="Usage exports" class="card-icon" />
+              <h3>Usage exports</h3>
+              <p>Export usage by project and model for finance and audits.</p>
             </div>
           </div>
         </div>
@@ -162,12 +172,12 @@
             </div>
             <div class="mockup">
               <div class="mockup-header">
-                <span>Console Snapshot</span>
-                <span>Live usage</span>
+                <span>Operations Console</span>
+                <span>Real-time view</span>
               </div>
               <div class="visual-stack">
                 <div class="visual-chart">
-                  <strong>Usage health</strong>
+                  <strong>Usage signal</strong>
                   <div class="visual-bars">
                     <div class="visual-bar visual-bar-70"></div>
                     <div class="visual-bar visual-bar-60"></div>
@@ -177,16 +187,16 @@
                 </div>
                 <div class="visual-stats">
                   <div class="stat">
-                    <small class="note">Credits</small>
-                    <strong>€1,280</strong>
+                    <small class="note">Credits posture</small>
+                    <strong>Auto-topups enabled</strong>
                   </div>
                   <div class="stat">
-                    <small class="note">Requests today</small>
-                    <strong>2,840</strong>
+                    <small class="note">Usage visibility</small>
+                    <strong>By team, model, key</strong>
                   </div>
                   <div class="stat">
-                    <small class="note">Keys active</small>
-                    <strong>12 keys</strong>
+                    <small class="note">Key hygiene</small>
+                    <strong>Rotation policy active</strong>
                   </div>
                 </div>
               </div>
@@ -202,13 +212,13 @@
             <p>Start with a single API call and get instant visibility into usage, credits, and logs.</p>
           </div>
           <div class="workflow-diagram">
-            <div class="diagram-node">Client</div>
+            <div class="diagram-node">App</div>
             <span>→</span>
-            <div class="diagram-node">Gateway</div>
+            <div class="diagram-node">LinkAI Route</div>
             <span>→</span>
-            <div class="diagram-node">Provider</div>
+            <div class="diagram-node">Providers</div>
             <span>→</span>
-            <div class="diagram-node">Logs &amp; usage</div>
+            <div class="diagram-node">Usage console</div>
           </div>
         </div>
       </section>
@@ -270,16 +280,16 @@
           </div>
           <div class="testimonial-grid">
             <div class="testimonial">
-              <p>“We onboarded new models in one weekend and kept the same API integration.”</p>
-              <small>— Platform lead, B2B SaaS</small>
+              <p>“Unified routing means we keep one integration even as providers change.”</p>
+              <small>— Platform lead</small>
             </div>
             <div class="testimonial">
-              <p>“Finance finally gets clean usage exports, engineers finally get one API. Win-win.”</p>
-              <small>— Ops &amp; finance, mid-market</small>
+              <p>“Finance sees clean exports without pulling engineers into every request.”</p>
+              <small>— Ops &amp; finance lead</small>
             </div>
             <div class="testimonial">
-              <p>“The console replaced a pile of spreadsheets we never wanted to maintain.”</p>
-              <small>— Staff engineer, automation team</small>
+              <p>“Guardrails let teams ship faster without surprise spend.”</p>
+              <small>— Staff engineer</small>
             </div>
           </div>
           <div class="logo-row">

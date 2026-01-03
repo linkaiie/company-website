@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="API icon">
+  <path d="M20 16H14V48H20" stroke="#0F6B5D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M44 16H50V48H44" stroke="#0F6B5D" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M24 32H40" stroke="#C35B32" stroke-width="2.4" stroke-linecap="round" />
+  <circle cx="32" cy="24" r="3.2" fill="#C35B32" />
+  <circle cx="32" cy="40" r="3.2" fill="#0F6B5D" />
+</svg>

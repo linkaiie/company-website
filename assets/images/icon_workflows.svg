@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Workflows icon">
+  <circle cx="18" cy="20" r="6" stroke="#0F6B5D" stroke-width="2.4" />
+  <circle cx="18" cy="44" r="6" stroke="#0F6B5D" stroke-width="2.4" />
+  <rect x="38" y="28" width="14" height="14" rx="3" stroke="#C35B32" stroke-width="2.4" />
+  <path d="M24 20H36V32" stroke="#0F6B5D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M24 44H36V34" stroke="#0F6B5D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+</svg>

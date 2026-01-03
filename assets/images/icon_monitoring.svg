@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" role="img" aria-label="Monitoring icon">
+  <rect x="12" y="16" width="34" height="28" rx="6" stroke="#0F6B5D" stroke-width="2.4" />
+  <path d="M18 36L26 28L32 32L40 22" stroke="#0F6B5D" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="44" cy="44" r="7" stroke="#C35B32" stroke-width="2.4" />
+  <path d="M49 49L56 56" stroke="#C35B32" stroke-width="2.4" stroke-linecap="round" />
+</svg>

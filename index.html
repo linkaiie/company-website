@@ -3,200 +3,263 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="LinkAI Route is an OpenAI-compatible gateway to manage API keys, credits, rate limits, and logs from one console." />
-    <meta name="theme-color" content="#F7F1E8" />
-    <title>LinkAI Route — OpenAI-compatible gateway</title>
+    <title>LinkAI — 24/7 AI Phone Receptionist for Irish Trades &amp; Service Businesses</title>
+    <meta name="description" content="LinkAI is a 24/7 AI phone receptionist for Irish trades and service businesses. It answers every missed call, books jobs into your calendar, and texts you the details — so you never lose work to voicemail again." />
+    <meta name="keywords" content="AI receptionist Ireland, AI phone answering, virtual receptionist, missed call answering service, AI call answering for trades, appointment booking AI, AI receptionist for plumbers electricians garages salons" />
+    <meta name="theme-color" content="#10271E" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://linkai.ie/" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="LinkAI" />
+    <meta property="og:url" content="https://linkai.ie/" />
+    <meta property="og:title" content="LinkAI — 24/7 AI Phone Receptionist for Irish Businesses" />
+    <meta property="og:description" content="The receptionist that answers when you can't. LinkAI picks up your missed calls, books the job into your calendar, and texts you the details — built for trades and service businesses across Ireland." />
+    <meta property="og:image" content="https://linkai.ie/assets/logo/linkai_logo_img.png" />
+    <meta property="og:locale" content="en_IE" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LinkAI — 24/7 AI Phone Receptionist for Irish Businesses" />
+    <meta name="twitter:description" content="The receptionist that answers when you can't. LinkAI answers missed calls, books the job, and texts you the details." />
+    <meta name="twitter:image" content="https://linkai.ie/assets/logo/linkai_logo_img.png" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png" />
+    <link rel="icon" href="assets/favicon_io/favicon.ico" />
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <script defer src="assets/js/main.js"></script>
+
+    <!-- Structured data: Organization + Product -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://linkai.ie/#organization",
+          "name": "LinkAI Ltd",
+          "url": "https://linkai.ie/",
+          "logo": "https://linkai.ie/assets/logo/linkai_logo_img.png",
+          "areaServed": "IE",
+          "email": "hello@linkai.ie"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "LinkAI AI Receptionist",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, Phone",
+          "url": "https://linkai.ie/",
+          "description": "A 24/7 AI phone receptionist for Irish trades and service businesses. Answers missed calls, books appointments, and notifies the owner instantly.",
+          "offers": {
+            "@type": "Offer",
+            "price": "59",
+            "priceCurrency": "EUR"
+          },
+          "provider": { "@id": "https://linkai.ie/#organization" }
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="page">
     <a class="skip-link" href="#main">Skip to content</a>
-    <header>
+    <header class="on-dark">
       <div class="container">
         <nav class="nav" aria-label="Primary">
           <a href="index.html" class="logo">
-            <img src="assets/logo/linkai_logo_txt_black.png" alt="LinkAI" width="74" height="22" />
+            <img src="assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
           </a>
           <div class="nav-links">
-            <a href="index.html" class="active" aria-current="page">Home</a>
-            <a href="route.html">Product</a>
-            <a href="solutions.html">Solutions</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="https://docs.linkai.ie">Docs</a>
+            <a href="#how">How it works</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+            <a href="route.html">For developers</a>
             <a href="company.html">Company</a>
-            <a href="careers.html">Careers</a>
           </div>
           <div class="nav-actions">
             <div class="nav-cta">
-              <a class="btn btn-secondary" href="https://route.linkai.ie/login">Sign in</a>
-              <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
+              <a class="btn btn-secondary" href="https://app.linkai.ie/login">Sign in</a>
+              <a class="btn btn-primary" href="https://app.linkai.ie/register">Get started</a>
             </div>
           </div>
           <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
         </nav>
         <div class="nav-mobile" id="nav-mobile" hidden>
-          <a href="index.html" class="active" aria-current="page">Home</a>
-          <a href="route.html">Product</a>
-          <a href="solutions.html">Solutions</a>
-          <a href="pricing.html">Pricing</a>
-          <a href="https://docs.linkai.ie">Docs</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="route.html">For developers</a>
           <a href="company.html">Company</a>
-          <a href="careers.html">Careers</a>
-          <a class="btn btn-secondary" href="https://route.linkai.ie/login">Sign in</a>
-          <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
+          <a class="btn btn-secondary" href="https://app.linkai.ie/login">Sign in</a>
+          <a class="btn btn-primary" href="https://app.linkai.ie/register">Get started</a>
         </div>
       </div>
     </header>
     <main id="main">
-      <section class="hero">
+
+      <!-- Hero -->
+      <section class="hero hero--dark">
         <div class="container">
           <div class="hero-grid">
             <div>
-              <div class="hero-meta">
-                <span class="meta-pill highlight">Production ready</span>
-                <span class="meta-pill">OpenAI-compatible gateway</span>
-              </div>
-              <p class="hero-tagline">AI usage control plane</p>
-              <h1>Route, bill, and govern AI usage from one console.</h1>
+              <h1>The receptionist that answers when you can&rsquo;t.</h1>
               <p>
-                LinkAI Route provides a single chat completions endpoint with project-level keys, credits, guardrails, and audit logs so teams can ship AI features with confidence.
+                You&rsquo;re on the tools, on the road, or off the clock. The phone rings
+                out, and that job goes to whoever answers next. LinkAI picks up your
+                missed calls, books the appointment into your calendar, and texts you
+                the details.
               </p>
               <div class="hero-actions">
-                <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
-                <a class="btn btn-secondary" href="https://docs.linkai.ie">Read docs</a>
+                <a class="btn btn-primary" href="https://app.linkai.ie/register">Start free trial</a>
+                <span class="note">No card needed. Live in about 10 minutes.</span>
               </div>
-              <p class="note">Credits-based billing, streaming support, and audit-ready logs out of the box.</p>
               <div class="brand-grid">
-                <span class="image-chip">Developers</span>
-                <span class="image-chip">Ops teams</span>
-                <span class="image-chip">Finance</span>
-                <span class="image-chip">Platform leads</span>
+                <span class="image-chip">Garages</span>
+                <span class="image-chip">Plumbers &amp; electricians</span>
+                <span class="image-chip">Barbers &amp; salons</span>
+                <span class="image-chip">Clinics</span>
               </div>
             </div>
             <div>
-              <div class="hero-visual-wrapper">
-                <img
-                  src="assets/images/hero_console.svg"
-                  width="1024"
-                  height="1024"
-                  alt="LinkAI Route console illustration"
-                  decoding="async"
-                  fetchpriority="high"
-                />
+              <div class="transcript-card" aria-label="Example call handled by the AI receptionist">
+                <div class="transcript-head">
+                  <span class="live-label"><span class="dot-live" aria-hidden="true"></span>Live · missed call answered by Aoife</span>
+                  <time>00:43</time>
+                </div>
+                <div class="transcript-wave" aria-hidden="true">
+                  <span class="waveform"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+                  <span class="note">Recording · summary only is stored</span>
+                </div>
+                <div class="transcript-body">
+                  <div class="transcript-line">
+                    <div class="who">Caller</div>
+                    <p class="said">Hi, I need a full service for the car. Anything going this Thursday?</p>
+                  </div>
+                  <div class="transcript-line ai">
+                    <div class="who">Aoife</div>
+                    <p class="said">Let me check Thursday for you now… I&rsquo;ve 10am or 2pm free. Which suits?</p>
+                  </div>
+                  <div class="transcript-line">
+                    <div class="who">Caller</div>
+                    <p class="said">10 works grand.</p>
+                  </div>
+                  <div class="transcript-line ai">
+                    <div class="who">Aoife</div>
+                    <p class="said">Perfect, you&rsquo;re booked in for Thursday at 10. See you then!</p>
+                  </div>
+                </div>
+                <div class="transcript-foot"><strong>Booked:</strong> Full service, Thu <time>10:00</time>. Owner notified by SMS.</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <!-- The maths -->
+      <section style="background:#fff">
         <div class="container">
-          <div class="section-title">
-            <h2>Why teams choose LinkAI Route</h2>
-            <p>Everything you need to ship OpenAI-compatible requests with billing, limits, and visibility built in.</p>
-          </div>
-          <div class="card-grid">
-            <div class="card">
-              <img src="assets/images/icon_api.svg" width="64" height="64" loading="lazy" decoding="async" alt="OpenAI-compatible API" class="card-icon" />
-              <h3>OpenAI-compatible API</h3>
-              <p>Keep the same chat completions schema with streaming support.</p>
+          <div class="maths-grid">
+            <div>
+              <div class="figure">~40%</div>
+              <p>of calls to small service businesses go unanswered during working hours. Most callers don&rsquo;t leave a voicemail — they ring the next place on the list.</p>
             </div>
-            <div class="card">
-              <img src="assets/images/icon_credits.svg" width="64" height="64" loading="lazy" decoding="async" alt="Credits and billing" class="card-icon" />
-              <h3>Credits &amp; billing</h3>
-              <p>Self-serve top ups with real-time balance visibility.</p>
+            <div>
+              <div class="figure">€35–90</div>
+              <p>typical value of a single booking. Two missed calls a week is thousands a year walking to a competitor.</p>
             </div>
-            <div class="card">
-              <img src="assets/images/icon_workflows.svg" width="64" height="64" loading="lazy" decoding="async" alt="Projects and API keys" class="card-icon" />
-              <h3>Projects &amp; API keys</h3>
-              <p>Isolate environments, rotate keys, and control access per project.</p>
-            </div>
-            <div class="card">
-              <img src="assets/images/icon_monitoring.svg" width="64" height="64" loading="lazy" decoding="async" alt="Rate limits and logs" class="card-icon" />
-              <h3>Rate limits &amp; logs</h3>
-              <p>Set RPM, concurrency, and daily caps with full request logs.</p>
-            </div>
-            <div class="card">
-              <img src="assets/images/icon_alerts.svg" width="64" height="64" loading="lazy" decoding="async" alt="Alerts and guardrails" class="card-icon" />
-              <h3>Alerts &amp; guardrails</h3>
-              <p>Get notified on balance thresholds, limit breaches, and anomalies.</p>
-            </div>
-            <div class="card">
-              <img src="assets/images/icon_exports.svg" width="64" height="64" loading="lazy" decoding="async" alt="Usage exports" class="card-icon" />
-              <h3>Usage exports</h3>
-              <p>Export usage by project and model for finance and audits.</p>
+            <div>
+              <div class="figure">24/7</div>
+              <p>your receptionist answers evenings, weekends and bank holidays, and books straight into your real availability.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <!-- How it works -->
+      <section id="how">
         <div class="container">
-          <div class="section-title">
-            <h2>Designed for production teams</h2>
-          </div>
-          <div class="solutions-grid">
-            <div class="solution-card">
-              <h3>AI product teams</h3>
-              <p>Ship one API integration across environments with shared visibility into usage and spend.</p>
+          <div class="grid-two" style="align-items:start">
+            <div>
+              <h2>How it works</h2>
+              <p>
+                No hardware, no new phone, no app for your customers. Your number
+                stays the same; only the calls you miss are handled differently.
+              </p>
             </div>
-            <div class="solution-card">
-              <h3>Agencies &amp; internal platforms</h3>
-              <p>Separate clients by project, set limits, and export usage for reporting.</p>
-            </div>
-            <div class="solution-card">
-              <h3>Ops &amp; finance visibility</h3>
-              <p>Track credits, request logs, and error rates without extra instrumentation.</p>
+            <div class="steps-list">
+              <div class="step-row">
+                <div class="n">1</div>
+                <div>
+                  <h3>Tell us about your business</h3>
+                  <p>Register, then describe your shop in a sentence or two. Your opening hours, services and prices are set up from that. Takes about a minute.</p>
+                </div>
+              </div>
+              <div class="step-row">
+                <div class="n">2</div>
+                <div>
+                  <h3>Divert missed calls</h3>
+                  <p>You get a dedicated Irish number. Dial <span class="dial-code">**61*&lt;your AI number&gt;#</span> on your mobile once. From then on, calls you don&rsquo;t answer go to your receptionist instead of voicemail. Works on Eir, Vodafone, Three and Virgin Media.</p>
+                </div>
+              </div>
+              <div class="step-row">
+                <div class="n">3</div>
+                <div>
+                  <h3>Bookings appear in your calendar</h3>
+                  <p>The receptionist checks your live availability, offers times, books the slot and emails or texts you straight away. Every call and booking shows up in your dashboard with a one-line summary.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <!-- Setup once -->
+      <section style="background:#fff">
         <div class="container">
           <div class="grid-two">
             <div>
-              <div class="eyebrow">Operations Console</div>
-              <h2>Projects, credits, and logs in one view.</h2>
-              <p>Monitor usage by project, model, and API key. Adjust rate limits, track credits, and review request logs without leaving the console.</p>
+              <div class="eyebrow">Set up once</div>
+              <h2>Describe your business. The receptionist follows your rules.</h2>
+              <p>Tell LinkAI your opening hours, services and how you like to handle bookings. It talks to your customers the way you would — and never double-books.</p>
               <ul class="list">
-                <li>Project isolation with API key rotation</li>
-                <li>Usage and logs exports for audits</li>
-                <li>Rate limits and credit balance alerts</li>
+                <li>Keep your existing number — only unanswered calls divert</li>
+                <li>Live calendar, so offered slots are actually free</li>
+                <li>Your rules: “no colour bookings after 4pm”, capacity, days off</li>
+                <li>Email and SMS the second a job is booked</li>
               </ul>
+              <a class="btn btn-primary" href="https://app.linkai.ie/register">Get started</a>
             </div>
             <div class="mockup">
               <div class="mockup-header">
-                <span>Operations Console</span>
-                <span>Real-time view</span>
+                <span>This week</span>
+                <span class="live-label"><span class="dot-live" aria-hidden="true"></span>Online</span>
               </div>
               <div class="visual-stack">
                 <div class="visual-chart">
-                  <strong>Usage signal</strong>
+                  <strong>Calls answered while you worked</strong>
                   <div class="visual-bars">
+                    <div class="visual-bar visual-bar-90"></div>
                     <div class="visual-bar visual-bar-70"></div>
                     <div class="visual-bar visual-bar-60"></div>
-                    <div class="visual-bar visual-bar-90"></div>
                   </div>
-                  <p class="note">Latency, error rate, and spend trends</p>
+                  <p class="note">Every one of these used to be a voicemail</p>
                 </div>
                 <div class="visual-stats">
                   <div class="stat">
-                    <small class="note">Credits posture</small>
-                    <strong>Auto-topups enabled</strong>
+                    <small class="note">Answered</small>
+                    <strong>24/7</strong>
                   </div>
                   <div class="stat">
-                    <small class="note">Usage visibility</small>
-                    <strong>By team, model, key</strong>
+                    <small class="note">Pickup</small>
+                    <strong>First ring</strong>
                   </div>
                   <div class="stat">
-                    <small class="note">Key hygiene</small>
-                    <strong>Rotation policy active</strong>
+                    <small class="note">Booked this week</small>
+                    <strong>23 jobs</strong>
                   </div>
                 </div>
               </div>
@@ -205,124 +268,115 @@
         </div>
       </section>
 
+      <!-- Sectors -->
       <section>
         <div class="container">
-          <div class="section-title">
-            <h2>From first call to full visibility</h2>
-            <p>Start with a single API call and get instant visibility into usage, credits, and logs.</p>
-          </div>
-          <div class="workflow-diagram">
-            <div class="diagram-node">App</div>
-            <span>→</span>
-            <div class="diagram-node">LinkAI Route</div>
-            <span>→</span>
-            <div class="diagram-node">Providers</div>
-            <span>→</span>
-            <div class="diagram-node">Usage console</div>
+          <h2>Made for businesses that work with their hands full</h2>
+          <div class="sector-grid" style="margin-top:1.6rem">
+            <div class="sector-row"><span class="name">Garages and mechanics</span><p class="why">A booking taken while you&rsquo;re under a car.</p></div>
+            <div class="sector-row"><span class="name">Plumbers and electricians</span><p class="why">Callbacks booked instead of phone tag.</p></div>
+            <div class="sector-row"><span class="name">Barbers and salons</span><p class="why">Clients book while you&rsquo;re mid-cut.</p></div>
+            <div class="sector-row"><span class="name">Beauty and aesthetics</span><p class="why">Evening and weekend calls still get booked.</p></div>
+            <div class="sector-row"><span class="name">Clinics and therapists</span><p class="why">Enquiries handled without pulling staff away.</p></div>
+            <div class="sector-row"><span class="name">Vets and pet services</span><p class="why">After-hours owners get a slot before morning.</p></div>
           </div>
         </div>
       </section>
 
-      <section>
+      <!-- Pricing -->
+      <section id="pricing" style="background:#fff">
         <div class="container">
           <div class="section-title">
-            <h2>Credits-based billing, built for teams</h2>
-            <p>Start self-serve and scale into shared limits, exports, and custom billing when you need it.</p>
+            <h2>Pricing</h2>
+            <p>Per minute of calls actually handled, not per seat. No setup fees, cancel any time. Prices in EUR, ex VAT.</p>
           </div>
           <div class="pricing-table">
             <div class="pricing-card">
               <h3>Starter</h3>
-              <p>Self-serve teams</p>
+              <p><strong class="price">€59</strong> / month</p>
               <ul class="list">
-                <li>OpenAI-compatible API</li>
-                <li>Projects + API keys</li>
-                <li>Usage dashboard</li>
+                <li>150 call minutes a month</li>
+                <li>24/7 call answering</li>
+                <li>Calendar booking</li>
+                <li>Email notifications</li>
+                <li>€0.20 per minute after that</li>
+              </ul>
+            </div>
+            <div class="pricing-card popular">
+              <h3>Growth <span class="badge">Most popular</span></h3>
+              <p><strong class="price">€109</strong> / month</p>
+              <ul class="list">
+                <li>400 call minutes a month</li>
+                <li>Everything in Starter</li>
+                <li>SMS notifications</li>
+                <li>Custom booking rules</li>
+                <li>€0.20 per minute after that</li>
               </ul>
             </div>
             <div class="pricing-card">
-              <h3>Team</h3>
-              <p>Growing teams</p>
+              <h3>Pro</h3>
+              <p><strong class="price">€219</strong> / month</p>
               <ul class="list">
-                <li>Multiple projects</li>
-                <li>Rate limits</li>
-                <li>Logs export</li>
-              </ul>
-            </div>
-            <div class="pricing-card">
-              <h3>Business</h3>
-              <p>Production workloads</p>
-              <ul class="list">
-                <li>Credit management</li>
-                <li>Advanced limits</li>
-                <li>Support SLAs</li>
-              </ul>
-            </div>
-            <div class="pricing-card">
-              <h3>Enterprise</h3>
-              <p>Custom contracts</p>
-              <ul class="list">
-                <li>Invoice billing</li>
-                <li>Security reviews</li>
-                <li>Dedicated support</li>
+                <li>900 call minutes a month</li>
+                <li>Everything in Growth</li>
+                <li>Priority support</li>
+                <li>Dedicated onboarding call</li>
+                <li>€0.20 per minute after that</li>
               </ul>
             </div>
           </div>
-          <div class="section-title section-title--compact">
-            <a class="btn btn-secondary" href="pricing.html">View full pricing →</a>
+          <p class="section-note">An average call is about 2–3 minutes, so 150 minutes covers roughly 60 calls.</p>
+          <div class="section-title--compact">
+            <a class="btn btn-primary" href="https://app.linkai.ie/register">Start your free trial</a>
           </div>
         </div>
       </section>
 
-      <section>
+      <!-- FAQ -->
+      <section id="faq">
         <div class="container">
-          <div class="section-title">
-            <h2>Teams use LinkAI Route to keep their AI stack under control</h2>
-          </div>
-          <div class="testimonial-grid">
-            <div class="testimonial">
-              <p>“Unified routing means we keep one integration even as providers change.”</p>
-              <small>— Platform lead</small>
+          <div class="grid-two" style="align-items:start">
+            <div>
+              <h2>Questions</h2>
+              <p style="color:var(--color-sub);font-size:15px">Anything else, email <a href="mailto:hello@linkai.ie">hello@linkai.ie</a> and a person will answer.</p>
             </div>
-            <div class="testimonial">
-              <p>“Finance sees clean exports without pulling engineers into every request.”</p>
-              <small>— Ops &amp; finance lead</small>
-            </div>
-            <div class="testimonial">
-              <p>“Guardrails let teams ship faster without surprise spend.”</p>
-              <small>— Staff engineer</small>
-            </div>
-          </div>
-          <div class="logo-row">
-            <div class="logo-badge">
-              <strong>E-commerce</strong>
-              <span>Catalog ops &amp; support</span>
-            </div>
-            <div class="logo-badge">
-              <strong>Manufacturing</strong>
-              <span>Field ops automation</span>
-            </div>
-            <div class="logo-badge">
-              <strong>Fintech</strong>
-              <span>Usage &amp; billing ops</span>
-            </div>
-            <div class="logo-badge">
-              <strong>Healthcare</strong>
-              <span>Audit-ready logs</span>
+            <div>
+              <div class="solution-card" style="padding-top:0">
+                <h3>Do I need a new phone number?</h3>
+                <p>No. Keep your existing number and set conditional call forwarding so unanswered calls go to your receptionist. We walk you through it in setup.</p>
+              </div>
+              <div class="solution-card">
+                <h3>What happens when I do answer?</h3>
+                <p>Nothing changes. The diversion only applies to calls you miss or decline — answer as normal and the receptionist never picks up.</p>
+              </div>
+              <div class="solution-card">
+                <h3>Will callers know it&rsquo;s not a person?</h3>
+                <p>There&rsquo;s an optional disclosure greeting (on by default, recommended under GDPR). The voice is a natural Irish accent; most callers simply make their booking.</p>
+              </div>
+              <div class="solution-card">
+                <h3>What happens to the booking?</h3>
+                <p>It goes straight into your LinkAI calendar, and you get an email (and optional SMS) with the customer&rsquo;s name, number and the job.</p>
+              </div>
+              <div class="solution-card">
+                <h3>Is my data safe?</h3>
+                <p>No call recordings or full transcripts are stored — only a short summary. Customer phone numbers are masked, in line with Irish and EU GDPR rules.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- CTA -->
       <section>
         <div class="container">
           <div class="cta-card">
             <div>
-              <h2>Launch your first request in minutes.</h2>
-              <p>Create a project, top up credits, and start sending OpenAI-compatible requests.</p>
+              <h2>Try it on your own missed calls</h2>
+              <p>Free trial, no card. If it doesn&rsquo;t book you a job, turn the diversion off.</p>
             </div>
             <div class="cta-actions">
-              <a class="btn btn-primary" href="https://route.linkai.ie/signup">Get started</a>
-              <a class="btn btn-secondary" href="https://docs.linkai.ie">Read docs</a>
+              <a class="btn btn-primary" href="https://app.linkai.ie/register">Start free trial</a>
+              <a class="btn btn-secondary" href="mailto:hello@linkai.ie">Talk to us</a>
             </div>
           </div>
         </div>
@@ -333,15 +387,15 @@
           <div class="footer-grid">
             <div>
               <strong>LinkAI Ltd</strong>
-              <p>LinkAI Route is an OpenAI-compatible gateway with credits, rate limits, and request logs in one dashboard.</p>
+              <p>A 24/7 AI phone receptionist for Irish trades and service businesses — answering missed calls, booking jobs, and notifying you instantly.</p>
             </div>
           <div>
             <h4>Product</h4>
             <div class="footer-links">
-              <a href="route.html">LinkAI Route</a>
-              <a href="solutions.html">Solutions</a>
-              <a href="pricing.html">Pricing</a>
-              <a href="https://docs.linkai.ie">Docs</a>
+              <a href="#how">How it works</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#faq">FAQ</a>
+              <a href="https://app.linkai.ie/register">Get started</a>
             </div>
           </div>
           <div>
@@ -350,6 +404,7 @@
               <a href="company.html#about">About</a>
               <a href="company.html#contact">Contact</a>
               <a href="careers.html">Careers</a>
+              <a href="route.html">LinkAI Route (for developers)</a>
             </div>
           </div>
         </div>

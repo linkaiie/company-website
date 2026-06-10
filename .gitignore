@@ -21,3 +21,6 @@ tmp/
 
 # OS metadata
 Thumbs.db
+
+# Claude Code local config
+.claude/

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LinkAI — 24/7 AI Phone Receptionist for Irish Trades &amp; Service Businesses</title>
-    <meta name="description" content="LinkAI is a 24/7 AI phone receptionist for Irish trades and service businesses. It answers every missed call, books jobs into your calendar, and texts you the details — so you never lose work to voicemail again." />
+    <meta name="description" content="LinkAI is a 24/7 AI phone receptionist for Irish trades and service businesses. It answers every missed call, books jobs into your calendar, and emails you the details — so you never lose work to voicemail again." />
     <meta name="keywords" content="AI receptionist Ireland, AI phone answering, virtual receptionist, missed call answering service, AI call answering for trades, appointment booking AI, AI receptionist for plumbers electricians garages salons" />
-    <meta name="theme-color" content="#10271E" />
+    <meta name="theme-color" content="#FAFAF7" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://linkai.ie/" />
 
@@ -15,14 +15,14 @@
     <meta property="og:site_name" content="LinkAI" />
     <meta property="og:url" content="https://linkai.ie/" />
     <meta property="og:title" content="LinkAI — 24/7 AI Phone Receptionist for Irish Businesses" />
-    <meta property="og:description" content="The receptionist that answers when you can't. LinkAI picks up your missed calls, books the job into your calendar, and texts you the details — built for trades and service businesses across Ireland." />
+    <meta property="og:description" content="The receptionist that answers when you can't. LinkAI picks up your missed calls, books the job into your calendar, and emails you the details — built for trades and service businesses across Ireland." />
     <meta property="og:image" content="https://linkai.ie/assets/logo/linkai_logo_img.png" />
     <meta property="og:locale" content="en_IE" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="LinkAI — 24/7 AI Phone Receptionist for Irish Businesses" />
-    <meta name="twitter:description" content="The receptionist that answers when you can't. LinkAI answers missed calls, books the job, and texts you the details." />
+    <meta name="twitter:description" content="The receptionist that answers when you can't. LinkAI answers missed calls, books the job, and emails you the details." />
     <meta name="twitter:image" content="https://linkai.ie/assets/logo/linkai_logo_img.png" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png" />
@@ -45,21 +45,70 @@
           "url": "https://linkai.ie/",
           "logo": "https://linkai.ie/assets/logo/linkai_logo_img.png",
           "areaServed": "IE",
-          "email": "hello@linkai.ie"
+          "email": "info@linkai.ie"
         },
         {
-          "@type": "SoftwareApplication",
-          "name": "LinkAI AI Receptionist",
-          "applicationCategory": "BusinessApplication",
-          "operatingSystem": "Web, Phone",
+          "@type": "WebSite",
+          "@id": "https://linkai.ie/#website",
           "url": "https://linkai.ie/",
-          "description": "A 24/7 AI phone receptionist for Irish trades and service businesses. Answers missed calls, books appointments, and notifies the owner instantly.",
+          "name": "LinkAI",
+          "publisher": { "@id": "https://linkai.ie/#organization" },
+          "inLanguage": "en-IE"
+        },
+        {
+          "@type": "Service",
+          "@id": "https://linkai.ie/#service",
+          "name": "LinkAI AI Phone Receptionist",
+          "serviceType": "AI phone receptionist and appointment booking",
+          "provider": { "@id": "https://linkai.ie/#organization" },
+          "areaServed": { "@type": "Country", "name": "Ireland" },
+          "audience": {
+            "@type": "Audience",
+            "audienceType": "Trades and service businesses — garages, plumbers, electricians, barbers, salons, clinics, vets"
+          },
+          "description": "A 24/7 AI phone receptionist for Irish trades and service businesses. Answers missed calls, books appointments into your calendar, and notifies the owner instantly by email.",
           "offers": {
             "@type": "Offer",
             "price": "59",
-            "priceCurrency": "EUR"
-          },
-          "provider": { "@id": "https://linkai.ie/#organization" }
+            "priceCurrency": "EUR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "59",
+              "priceCurrency": "EUR",
+              "unitText": "month"
+            }
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://linkai.ie/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do I need a new phone number?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No. Keep your existing number and set conditional call forwarding so unanswered calls go to your receptionist. We walk you through it in setup." }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens when I do answer?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Nothing changes. The diversion only applies to calls you miss or decline — answer as normal and the receptionist never picks up." }
+            },
+            {
+              "@type": "Question",
+              "name": "Will callers know it's not a person?",
+              "acceptedAnswer": { "@type": "Answer", "text": "There's an optional disclosure greeting (on by default, recommended under GDPR). The voice is a natural Irish accent; most callers simply make their booking." }
+            },
+            {
+              "@type": "Question",
+              "name": "What happens to the booking?",
+              "acceptedAnswer": { "@type": "Answer", "text": "It goes straight into your LinkAI calendar, and you get an email with the customer's name, number and the job." }
+            },
+            {
+              "@type": "Question",
+              "name": "Is my data safe?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No call recordings or full transcripts are stored — only a short summary. Customer phone numbers are masked, in line with Irish and EU GDPR rules." }
+            }
+          ]
         }
       ]
     }
@@ -67,24 +116,21 @@
   </head>
   <body class="page">
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="on-dark">
+    <header>
       <div class="container">
         <nav class="nav" aria-label="Primary">
           <a href="index.html" class="logo">
-            <img src="assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
+            <img src="assets/logo/linkai_logo_txt_black.png" alt="LinkAI" width="74" height="22" />
           </a>
           <div class="nav-links">
             <a href="#how">How it works</a>
             <a href="#pricing">Pricing</a>
             <a href="#faq">FAQ</a>
-            <a href="route.html">For developers</a>
             <a href="company.html">Company</a>
           </div>
           <div class="nav-actions">
-            <div class="nav-cta">
-              <a class="btn btn-secondary" href="https://app.linkai.ie/login">Sign in</a>
-              <a class="btn btn-primary" href="https://app.linkai.ie/register">Get started</a>
-            </div>
+            <a class="text-link" href="https://app.linkai.ie/login">Sign in</a>
+            <a class="btn btn-primary" href="https://app.linkai.ie/register">Get started</a>
           </div>
           <button class="mobile-toggle" aria-expanded="false" aria-label="Toggle navigation" aria-controls="nav-mobile">☰</button>
         </nav>
@@ -92,67 +138,67 @@
           <a href="#how">How it works</a>
           <a href="#pricing">Pricing</a>
           <a href="#faq">FAQ</a>
-          <a href="route.html">For developers</a>
           <a href="company.html">Company</a>
           <a class="btn btn-secondary" href="https://app.linkai.ie/login">Sign in</a>
           <a class="btn btn-primary" href="https://app.linkai.ie/register">Get started</a>
         </div>
       </div>
     </header>
+
     <main id="main">
 
       <!-- Hero -->
-      <section class="hero hero--dark">
+      <section class="hero">
         <div class="container">
-          <div class="hero-grid">
+          <div class="grid-2">
             <div>
-              <h1>The receptionist that answers when you can&rsquo;t.</h1>
-              <p>
-                You&rsquo;re on the tools, on the road, or off the clock. The phone rings
-                out, and that job goes to whoever answers next. LinkAI picks up your
-                missed calls, books the appointment into your calendar, and texts you
-                the details.
+              <span class="eyebrow">AI receptionist · Ireland</span>
+              <h1 style="margin-top:18px">The receptionist that answers when you can&rsquo;t.</h1>
+              <p class="lead" style="margin-top:24px;max-width:34ch">
+                You&rsquo;re on the tools, on the road, or off the clock. The phone rings out, and
+                that job goes to whoever answers next. LinkAI picks up your missed calls, books
+                the appointment into your calendar, and emails you the details.
               </p>
               <div class="hero-actions">
                 <a class="btn btn-primary" href="https://app.linkai.ie/register">Start free trial</a>
                 <span class="note">No card needed. Live in about 10 minutes.</span>
               </div>
-              <div class="brand-grid">
-                <span class="image-chip">Garages</span>
-                <span class="image-chip">Plumbers &amp; electricians</span>
-                <span class="image-chip">Barbers &amp; salons</span>
-                <span class="image-chip">Clinics</span>
+              <div class="chip-row">
+                <span class="chip">Garages</span>
+                <span class="chip">Plumbers &amp; electricians</span>
+                <span class="chip">Barbers &amp; salons</span>
+                <span class="chip">Clinics</span>
               </div>
             </div>
             <div>
-              <div class="transcript-card" aria-label="Example call handled by the AI receptionist">
-                <div class="transcript-head">
-                  <span class="live-label"><span class="dot-live" aria-hidden="true"></span>Live · missed call answered by Aoife</span>
-                  <time>00:43</time>
+              <div class="mockup" aria-label="Example call handled by the AI receptionist">
+                <div class="mockup-head">
+                  <span class="live"><span class="dot-live" aria-hidden="true"></span>Missed call · answered by Aoife</span>
+                  <span class="mono">00:43</span>
                 </div>
-                <div class="transcript-wave" aria-hidden="true">
+                <div class="wave" aria-hidden="true">
                   <span class="waveform"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
                   <span class="note">Recording · summary only is stored</span>
                 </div>
-                <div class="transcript-body">
-                  <div class="transcript-line">
+                <div class="transcript">
+                  <div class="line">
                     <div class="who">Caller</div>
                     <p class="said">Hi, I need a full service for the car. Anything going this Thursday?</p>
                   </div>
-                  <div class="transcript-line ai">
+                  <div class="line ai">
                     <div class="who">Aoife</div>
                     <p class="said">Let me check Thursday for you now… I&rsquo;ve 10am or 2pm free. Which suits?</p>
                   </div>
-                  <div class="transcript-line">
+                  <div class="line">
                     <div class="who">Caller</div>
                     <p class="said">10 works grand.</p>
                   </div>
-                  <div class="transcript-line ai">
+                  <div class="line ai">
                     <div class="who">Aoife</div>
                     <p class="said">Perfect, you&rsquo;re booked in for Thursday at 10. See you then!</p>
                   </div>
                 </div>
-                <div class="transcript-foot"><strong>Booked:</strong> Full service, Thu <time>10:00</time>. Owner notified by SMS.</div>
+                <div class="booked"><strong>Booked:</strong> Full service, Thu <span class="mono">10:00</span>. Owner notified by email.</div>
               </div>
             </div>
           </div>
@@ -160,19 +206,19 @@
       </section>
 
       <!-- The maths -->
-      <section style="background:#fff">
+      <section class="band-soft">
         <div class="container">
-          <div class="maths-grid">
+          <div class="maths">
             <div>
-              <div class="figure">~40%</div>
+              <div class="figure mono">~40%</div>
               <p>of calls to small service businesses go unanswered during working hours. Most callers don&rsquo;t leave a voicemail — they ring the next place on the list.</p>
             </div>
             <div>
-              <div class="figure">€35–90</div>
+              <div class="figure mono">€35–90</div>
               <p>typical value of a single booking. Two missed calls a week is thousands a year walking to a competitor.</p>
             </div>
             <div>
-              <div class="figure">24/7</div>
+              <div class="figure mono">24/7</div>
               <p>your receptionist answers evenings, weekends and bank holidays, and books straight into your real availability.</p>
             </div>
           </div>
@@ -180,36 +226,34 @@
       </section>
 
       <!-- How it works -->
-      <section id="how">
+      <section id="how" class="band-card">
         <div class="container">
-          <div class="grid-two" style="align-items:start">
-            <div>
-              <h2>How it works</h2>
-              <p>
-                No hardware, no new phone, no app for your customers. Your number
-                stays the same; only the calls you miss are handled differently.
-              </p>
+          <div class="grid-2 top">
+            <div class="section-head" style="margin-bottom:0">
+              <span class="eyebrow">How it works</span>
+              <h2 style="margin-top:16px">Live in an afternoon, not a project</h2>
+              <p>No hardware, no new phone, no app for your customers. Your number stays the same; only the calls you miss are handled differently.</p>
             </div>
-            <div class="steps-list">
-              <div class="step-row">
+            <div class="steps">
+              <div class="step">
                 <div class="n">1</div>
                 <div>
                   <h3>Tell us about your business</h3>
                   <p>Register, then describe your shop in a sentence or two. Your opening hours, services and prices are set up from that. Takes about a minute.</p>
                 </div>
               </div>
-              <div class="step-row">
+              <div class="step">
                 <div class="n">2</div>
                 <div>
                   <h3>Divert missed calls</h3>
-                  <p>You get a dedicated Irish number. Dial <span class="dial-code">**61*&lt;your AI number&gt;#</span> on your mobile once. From then on, calls you don&rsquo;t answer go to your receptionist instead of voicemail. Works on Eir, Vodafone, Three and Virgin Media.</p>
+                  <p>You get a dedicated Irish number. Dial <span class="dial">**61*&lt;your AI number&gt;#</span> on your mobile once. From then on, calls you don&rsquo;t answer go to your receptionist instead of voicemail. Works on Eir, Vodafone, Three and Virgin Media.</p>
                 </div>
               </div>
-              <div class="step-row">
+              <div class="step">
                 <div class="n">3</div>
                 <div>
                   <h3>Bookings appear in your calendar</h3>
-                  <p>The receptionist checks your live availability, offers times, books the slot and emails or texts you straight away. Every call and booking shows up in your dashboard with a one-line summary.</p>
+                  <p>The receptionist checks your live availability, offers times, books the slot and emails you straight away. Every call and booking shows up in your dashboard with a one-line summary.</p>
                 </div>
               </div>
             </div>
@@ -217,50 +261,41 @@
         </div>
       </section>
 
-      <!-- Setup once -->
-      <section style="background:#fff">
+      <!-- Set up once -->
+      <section>
         <div class="container">
-          <div class="grid-two">
+          <div class="grid-2">
             <div>
-              <div class="eyebrow">Set up once</div>
-              <h2>Describe your business. The receptionist follows your rules.</h2>
-              <p>Tell LinkAI your opening hours, services and how you like to handle bookings. It talks to your customers the way you would — and never double-books.</p>
-              <ul class="list">
+              <span class="eyebrow">Set up once</span>
+              <h2 style="margin-top:16px">Describe your business. It follows your rules.</h2>
+              <p style="margin-top:18px;color:var(--body)">Tell LinkAI your opening hours, services and how you like to handle bookings. It talks to your customers the way you would — and never double-books.</p>
+              <ul class="checklist">
                 <li>Keep your existing number — only unanswered calls divert</li>
                 <li>Live calendar, so offered slots are actually free</li>
-                <li>Your rules: “no colour bookings after 4pm”, capacity, days off</li>
-                <li>Email and SMS the second a job is booked</li>
+                <li>Your rules: &ldquo;no colour bookings after 4pm&rdquo;, capacity, days off</li>
+                <li>Email the second a job is booked</li>
               </ul>
               <a class="btn btn-primary" href="https://app.linkai.ie/register">Get started</a>
             </div>
-            <div class="mockup">
-              <div class="mockup-header">
-                <span>This week</span>
-                <span class="live-label"><span class="dot-live" aria-hidden="true"></span>Online</span>
-              </div>
-              <div class="visual-stack">
-                <div class="visual-chart">
-                  <strong>Calls answered while you worked</strong>
-                  <div class="visual-bars">
-                    <div class="visual-bar visual-bar-90"></div>
-                    <div class="visual-bar visual-bar-70"></div>
-                    <div class="visual-bar visual-bar-60"></div>
-                  </div>
-                  <p class="note">Every one of these used to be a voicemail</p>
+            <div>
+              <div class="mockup">
+                <div class="mockup-head">
+                  <span class="mono">This week</span>
+                  <span class="live"><span class="dot-live" aria-hidden="true"></span>Online</span>
                 </div>
-                <div class="visual-stats">
-                  <div class="stat">
-                    <small class="note">Answered</small>
-                    <strong>24/7</strong>
+                <div style="padding-top:18px">
+                  <div class="bar-title">Calls answered while you worked</div>
+                  <div class="bars" aria-hidden="true">
+                    <div class="bar b90"></div>
+                    <div class="bar b70"></div>
+                    <div class="bar b55"></div>
                   </div>
-                  <div class="stat">
-                    <small class="note">Pickup</small>
-                    <strong>First ring</strong>
-                  </div>
-                  <div class="stat">
-                    <small class="note">Booked this week</small>
-                    <strong>23 jobs</strong>
-                  </div>
+                  <div class="bar-note">Every one of these used to be a voicemail</div>
+                </div>
+                <div class="mstats">
+                  <div class="mstat"><small>Answered</small><strong>24/7</strong></div>
+                  <div class="mstat"><small>Pickup</small><strong>First ring</strong></div>
+                  <div class="mstat"><small>Booked</small><strong>23 jobs</strong></div>
                 </div>
               </div>
             </div>
@@ -269,95 +304,100 @@
       </section>
 
       <!-- Sectors -->
-      <section>
+      <section class="band-soft">
         <div class="container">
-          <h2>Made for businesses that work with their hands full</h2>
-          <div class="sector-grid" style="margin-top:1.6rem">
-            <div class="sector-row"><span class="name">Garages and mechanics</span><p class="why">A booking taken while you&rsquo;re under a car.</p></div>
-            <div class="sector-row"><span class="name">Plumbers and electricians</span><p class="why">Callbacks booked instead of phone tag.</p></div>
-            <div class="sector-row"><span class="name">Barbers and salons</span><p class="why">Clients book while you&rsquo;re mid-cut.</p></div>
-            <div class="sector-row"><span class="name">Beauty and aesthetics</span><p class="why">Evening and weekend calls still get booked.</p></div>
-            <div class="sector-row"><span class="name">Clinics and therapists</span><p class="why">Enquiries handled without pulling staff away.</p></div>
-            <div class="sector-row"><span class="name">Vets and pet services</span><p class="why">After-hours owners get a slot before morning.</p></div>
+          <div class="section-head">
+            <span class="eyebrow">Who it&rsquo;s for</span>
+            <h2 style="margin-top:16px">Made for businesses that work with their hands full</h2>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card"><div class="name">Garages &amp; mechanics</div><p>A booking taken while you&rsquo;re under a car.</p></div>
+            <div class="feature-card"><div class="name">Plumbers &amp; electricians</div><p>Callbacks booked instead of phone tag.</p></div>
+            <div class="feature-card"><div class="name">Barbers &amp; salons</div><p>Clients book while you&rsquo;re mid-cut.</p></div>
+            <div class="feature-card"><div class="name">Beauty &amp; aesthetics</div><p>Evening and weekend calls still get booked.</p></div>
+            <div class="feature-card"><div class="name">Clinics &amp; therapists</div><p>Enquiries handled without pulling staff away.</p></div>
+            <div class="feature-card"><div class="name">Vets &amp; pet services</div><p>After-hours owners get a slot before morning.</p></div>
           </div>
         </div>
       </section>
 
       <!-- Pricing -->
-      <section id="pricing" style="background:#fff">
+      <section id="pricing">
         <div class="container">
-          <div class="section-title">
-            <h2>Pricing</h2>
-            <p>Per minute of calls actually handled, not per seat. No setup fees, cancel any time. Prices in EUR, ex VAT.</p>
+          <div class="section-head" style="margin-left:auto;margin-right:auto;text-align:center">
+            <span class="eyebrow">Pricing</span>
+            <h2 style="margin-top:16px">Priced by the call, not the seat</h2>
+            <p>Per minute of calls actually handled. No setup fees, cancel any time. Prices in EUR, ex VAT.</p>
           </div>
-          <div class="pricing-table">
-            <div class="pricing-card">
-              <h3>Starter</h3>
-              <p><strong class="price">€59</strong> / month</p>
-              <ul class="list">
+          <div class="pricing">
+            <div class="tier">
+              <div class="tier-name"><h3>Starter</h3></div>
+              <div class="price">€59<span class="per"> / month</span></div>
+              <ul>
                 <li>150 call minutes a month</li>
                 <li>24/7 call answering</li>
                 <li>Calendar booking</li>
                 <li>Email notifications</li>
                 <li>€0.20 per minute after that</li>
               </ul>
+              <a class="btn btn-secondary" href="https://app.linkai.ie/register" style="margin-top:28px">Start free trial</a>
             </div>
-            <div class="pricing-card popular">
-              <h3>Growth <span class="badge">Most popular</span></h3>
-              <p><strong class="price">€109</strong> / month</p>
-              <ul class="list">
+            <div class="tier featured">
+              <div class="tier-name"><h3>Growth</h3><span class="badge">Most popular</span></div>
+              <div class="price">€109<span class="per"> / month</span></div>
+              <ul>
                 <li>400 call minutes a month</li>
                 <li>Everything in Starter</li>
-                <li>SMS notifications</li>
+                <li>Instant email alerts</li>
                 <li>Custom booking rules</li>
                 <li>€0.20 per minute after that</li>
               </ul>
+              <a class="btn btn-on-dark" href="https://app.linkai.ie/register" style="margin-top:28px">Start free trial</a>
             </div>
-            <div class="pricing-card">
-              <h3>Pro</h3>
-              <p><strong class="price">€219</strong> / month</p>
-              <ul class="list">
+            <div class="tier">
+              <div class="tier-name"><h3>Pro</h3></div>
+              <div class="price">€219<span class="per"> / month</span></div>
+              <ul>
                 <li>900 call minutes a month</li>
                 <li>Everything in Growth</li>
                 <li>Priority support</li>
                 <li>Dedicated onboarding call</li>
                 <li>€0.20 per minute after that</li>
               </ul>
+              <a class="btn btn-secondary" href="https://app.linkai.ie/register" style="margin-top:28px">Start free trial</a>
             </div>
           </div>
           <p class="section-note">An average call is about 2–3 minutes, so 150 minutes covers roughly 60 calls.</p>
-          <div class="section-title--compact">
-            <a class="btn btn-primary" href="https://app.linkai.ie/register">Start your free trial</a>
-          </div>
         </div>
       </section>
 
       <!-- FAQ -->
-      <section id="faq">
+      <section id="faq" class="band-soft">
         <div class="container">
-          <div class="grid-two" style="align-items:start">
-            <div>
-              <h2>Questions</h2>
-              <p style="color:var(--color-sub);font-size:15px">Anything else, email <a href="mailto:hello@linkai.ie">hello@linkai.ie</a> and a person will answer.</p>
+          <div class="grid-2 top">
+            <div class="section-head faq-intro" style="margin-bottom:0">
+              <span class="eyebrow">FAQ</span>
+              <h2 style="margin-top:16px">Questions</h2>
+              <p>Anything else, email <a href="mailto:info@linkai.ie">info@linkai.ie</a> and a person will answer.</p>
             </div>
-            <div>
-              <div class="solution-card" style="padding-top:0">
+            <div class="faq">
+              <div class="faq-item">
                 <h3>Do I need a new phone number?</h3>
                 <p>No. Keep your existing number and set conditional call forwarding so unanswered calls go to your receptionist. We walk you through it in setup.</p>
               </div>
-              <div class="solution-card">
+              <div class="faq-item">
                 <h3>What happens when I do answer?</h3>
                 <p>Nothing changes. The diversion only applies to calls you miss or decline — answer as normal and the receptionist never picks up.</p>
               </div>
-              <div class="solution-card">
+              <div class="faq-item">
                 <h3>Will callers know it&rsquo;s not a person?</h3>
                 <p>There&rsquo;s an optional disclosure greeting (on by default, recommended under GDPR). The voice is a natural Irish accent; most callers simply make their booking.</p>
               </div>
-              <div class="solution-card">
+              <div class="faq-item">
                 <h3>What happens to the booking?</h3>
-                <p>It goes straight into your LinkAI calendar, and you get an email (and optional SMS) with the customer&rsquo;s name, number and the job.</p>
+                <p>It goes straight into your LinkAI calendar, and you get an email with the customer&rsquo;s name, number and the job.</p>
               </div>
-              <div class="solution-card">
+              <div class="faq-item">
                 <h3>Is my data safe?</h3>
                 <p>No call recordings or full transcripts are stored — only a short summary. Customer phone numbers are masked, in line with Irish and EU GDPR rules.</p>
               </div>
@@ -369,26 +409,27 @@
       <!-- CTA -->
       <section>
         <div class="container">
-          <div class="cta-card">
+          <div class="callout">
             <div>
               <h2>Try it on your own missed calls</h2>
               <p>Free trial, no card. If it doesn&rsquo;t book you a job, turn the diversion off.</p>
             </div>
-            <div class="cta-actions">
-              <a class="btn btn-primary" href="https://app.linkai.ie/register">Start free trial</a>
-              <a class="btn btn-secondary" href="mailto:hello@linkai.ie">Talk to us</a>
+            <div class="callout-actions">
+              <a class="btn btn-on-coral" href="https://app.linkai.ie/register">Start free trial</a>
+              <a class="btn" style="border-color:rgba(255,255,255,0.5);color:#fff" href="mailto:info@linkai.ie">Talk to us</a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <footer>
       <div class="container">
-          <div class="footer-grid">
-            <div>
-              <strong>LinkAI Ltd</strong>
-              <p>A 24/7 AI phone receptionist for Irish trades and service businesses — answering missed calls, booking jobs, and notifying you instantly.</p>
-            </div>
+        <div class="footer-grid">
+          <div>
+            <img src="assets/logo/linkai_logo_txt_white.png" alt="LinkAI" width="74" height="22" />
+            <p>A 24/7 AI phone receptionist for Irish trades and service businesses — answering missed calls, booking jobs, and notifying you instantly.</p>
+          </div>
           <div>
             <h4>Product</h4>
             <div class="footer-links">
@@ -404,7 +445,7 @@
               <a href="company.html#about">About</a>
               <a href="company.html#contact">Contact</a>
               <a href="careers.html">Careers</a>
-              <a href="route.html">LinkAI Route (for developers)</a>
+              <a href="https://route.linkai.ie">LinkAI Route — AI API ↗</a>
             </div>
           </div>
         </div>

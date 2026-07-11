@@ -230,6 +230,7 @@ header.scrolled { border-bottom-color: var(--hairline); }
 
 .mobile-toggle {
   display: none;
+  margin-left: auto;
   background: none;
   border: 1px solid var(--hairline);
   border-radius: var(--r-md);
@@ -238,6 +239,8 @@ header.scrolled { border-bottom-color: var(--hairline); }
   font-size: 1.1rem;
   color: var(--ink);
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-mobile {
